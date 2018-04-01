@@ -1,5 +1,4 @@
 @extends('template.layout')
-
 @section('content')
     <div class="container" style="margin-top: 50px; margin-bottom: 50px">
 

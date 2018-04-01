@@ -1,5 +1,4 @@
 @extends('template.layout')
-
 @section('content')
 
     <div id="myCarousel" class="carousel slide" style="height: 600px" data-ride="carousel">

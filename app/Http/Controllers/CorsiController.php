@@ -27,4 +27,9 @@ class CorsiController extends Controller
     {
         return view('storia');
     }
+
+    public function info(Corso $corso)
+    {
+        return view('corsi.infocorso')->with('corso',$corso);;
+    }
 }

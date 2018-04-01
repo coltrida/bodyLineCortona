@@ -20,6 +20,7 @@ Route::get('/', 'CorsiController@home')->name('index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/storia', 'CorsiController@storia')->name('storia');
 Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
+Route::get('/agenda/{corso}',  'CorsiController@info')->name('info.corso');
 
 Auth::routes();
 

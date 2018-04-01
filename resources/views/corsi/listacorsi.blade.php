@@ -1,5 +1,4 @@
 @extends('template.layout')
-
 @section('content')
 
     <div class="container" style="margin-top: 50px">
@@ -30,7 +29,9 @@
                         @if($ris[0])
                             @foreach($ris[0] as $ele)
                                 @if($ele->ora==$i)
-                                    <button type="button" class="btn btn-primary">{{$ele->corsoId->nome_corso}} </button>
+                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                        <button type="button" class="btn btn-primary">{{$ele->corsoId->nome_corso}} </button>
+                                    </a>
                                 @endif
                             @endforeach
                         @endif

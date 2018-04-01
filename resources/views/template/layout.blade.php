@@ -147,7 +147,7 @@
                     <a class="nav-link" href="{{route('agenda')}}">Corsi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#two">Staff</a>
+                    <a class="nav-link" href="{{route('lista.staff')}}">Staff</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#two">Listino</a>
@@ -197,17 +197,6 @@
 
     @yield('content')
 
-
-    <div class="row featurette" style="margin: 70px 50px 0 50px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.539885132717!2d11.961271991606226!3d43.261394658018844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132bf95ee880ff89%3A0xb7349a3943a56b50!2sPalestra+Body+Line!5e0!3m2!1sit!2sit!4v1522417312218" width="1400" height="450" frameborder="2" style="border:0" allowfullscreen></iframe>
-    </div>
-
-    <!-- /END THE FEATURETTES -->
-
-    <!-- FOOTER -->
-    <footer class="container" id="three" >
-        <p class="float-right" ><a href="#top">Back to top</a></p>
-    </footer>
 </main>
 
 <!-- Bootstrap core JavaScript

@@ -30,6 +30,6 @@ class CorsiController extends Controller
 
     public function info(Corso $corso)
     {
-        return view('corsi.infocorso')->with('corso',$corso);;
+        return view('corsi.infocorso')->with('corso',$corso);
     }
 }

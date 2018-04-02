@@ -172,7 +172,7 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#" style="border:0;padding:0">
-            <img src="{{asset('images/logo.jpg')}}" alt="logo" height="60">
+            <img src="{{asset('images/blogo.png')}}" alt="logo" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -192,10 +192,10 @@
                     <a class="nav-link" href="{{route('lista.staff')}}">Staff</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#two">Listino</a>
+                    <a class="nav-link" href="{{route('info.listino')}}">Listino</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#two">Orario</a>
+                    <a class="nav-link" href="/#orario">Orario</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#three">Contatti</a>

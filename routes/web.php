@@ -32,6 +32,9 @@ Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
 Route::get('/staff', 'StaffController@index')->name('lista.staff');
 Route::get('/staff/{staff}',  'StaffController@infostaff')->name('info.staff');
 
+//-----------Listino Controller---------------------------
+Route::get('/listino', 'ListinoController@index')->name('info.listino');
+
 Auth::routes();
 
 

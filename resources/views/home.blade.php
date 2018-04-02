@@ -134,22 +134,61 @@
                         &nbsp
                     @endfor
                 </p>
-                <p><a class="btn btn-secondary" href="#" role="button">Foto &raquo;</a></p>
+                <p id="orario"><a class="btn btn-secondary" href="#" role="button">Foto &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+        </div ><!-- /.row -->
 
         <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
+        <hr  class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div >
+            <div  class="col-md-7" style="margin-top: -70px">
+                <h2  class="featurette-heading">Orario Apertura</h2>
+                <p class="lead">
+
+                    <div class="card-deck ">
+
+                        <div class="card bg-dark text-white" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Dal lunedì al giovedì</p>
+                                    Dalle 09:00 Alle 22:30
+                                </li>
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Venerdì</p>
+                                    Dalle 09:00 Alle 22:00
+                                </li>
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Sabato</p>
+                                    Dalle 09:00 Alle 13:00<br>Dalle 16:00 Alle 20:00
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card bg-dark text-white" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">From Monday to Thursday</p>
+                                    Open 09:00 am - Close 10:30 pm
+                                </li>
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Friday</p>
+                                    Open 09:00 am - Close 10:00 pm
+                                </li>
+                                <li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Saturday</p>
+                                    Open 09:00 am - Close 01:00 pm <br>Open 04:00 pm - Close 08:00 pm
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </p>
             </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
+
         </div>
 
         <hr class="featurette-divider">
@@ -160,7 +199,7 @@
                 <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" >
             </div>
         </div>
     </div><!-- /.container -->

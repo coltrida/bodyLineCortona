@@ -11,17 +11,26 @@
 |
 */
 
-Route::get('/', 'CorsiController@home')->name('index');
+
 
 /*Route::get('/storia', function () {
     return view('storia');
 });*/
 
+//-----------Home Controller---------------------------
+Route::get('/', 'CorsiController@home')->name('index');
 Route::get('/home', 'HomeController@index')->name('home');
+
+//-----------Corsi Controller---------------------------
 Route::get('/storia', 'CorsiController@storia')->name('storia');
-Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('info.corso');
+
+//-----------Agenda Controller---------------------------
+Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
+
+//-----------Staff Controller---------------------------
 Route::get('/staff', 'StaffController@index')->name('lista.staff');
+Route::get('/staff/{staff}',  'StaffController@infostaff')->name('info.staff');
 
 Auth::routes();
 

@@ -23,7 +23,7 @@
                         @if($ris[0])
                             @foreach($ris[0] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif
@@ -34,7 +34,7 @@
                         @if($ris[1])
                             @foreach($ris[1] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif
@@ -45,7 +45,7 @@
                         @if($ris[2])
                             @foreach($ris[2] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif
@@ -56,7 +56,7 @@
                         @if($ris[3])
                             @foreach($ris[3] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif
@@ -67,7 +67,7 @@
                         @if($ris[4])
                             @foreach($ris[4] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif
@@ -78,7 +78,7 @@
                         @if($ris[5])
                             @foreach($ris[5] as $ele)
                                 @if($ele->ora==$i)
-                                    <a href="{{route('info.corso', $ele->corso_id)}}">
+                                    <a href="{{route('corso.info', $ele->corso_id)}}">
                                         <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
                                 @endif

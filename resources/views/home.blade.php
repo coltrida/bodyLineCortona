@@ -56,7 +56,21 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing" id="two">
+    <div class="container marketing">
+
+        @if(isset(Auth::user()->name) && Auth::user()->name=='admin')
+            <div class="row" style="width:100%;margin-top: -40px;margin-bottom: 30px">
+                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione Corsi</button>
+
+                <a class="nav-link" href="{{route('listino.modifica')}}">
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px;margin-right: 10px">Gestione Listino</button>
+                </a>
+
+                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione News</button>
+                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione Staff</button>
+                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Paese dei Balocchi</button>
+            </div>
+        @endif
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
@@ -208,7 +222,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.539885132717!2d11.961271991606226!3d43.261394658018844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132bf95ee880ff89%3A0xb7349a3943a56b50!2sPalestra+Body+Line!5e0!3m2!1sit!2sit!4v1522417312218" width="1400" height="450" frameborder="2" style="border:0" allowfullscreen></iframe>
     </div>
 
-    <footer class="container" id="three" >
+    <footer class="container" id="contatti" >
         <p class="float-right" ><a href="#top">Back to top</a></p>
     </footer>
 

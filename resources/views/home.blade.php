@@ -65,9 +65,12 @@
                 <a class="nav-link" href="{{route('listino.modifica')}}">
                     <button type="button" class="btn btn-dark" style="width: 160px;height:60px;margin-right: 10px">Gestione Listino</button>
                 </a>
-
-                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione News</button>
-                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione Staff</button>
+                <a class="nav-link" href="{{route('news.inserisci')}}">
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin-right: 10px">Gestione News</button>
+                </a>
+                <a class="nav-link" href="{{route('staff.modifica')}}">
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin-right: 10px">Gestione Staff</button>
+                </a>
                 <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Paese dei Balocchi</button>
             </div>
         @endif
@@ -207,10 +210,21 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+        <div class="row featurette" >
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <div class="card" style="width: 32rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img class="card-img-top" src="{{asset($news->path)}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">Ultima novità</h2>
+                        <p class="card-text">{{$news->descrizione}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Data: {{$news->created_at->format('d M Y')}}</li>
+                    </ul>
+                </div>
+{{--                <h2 class="featurette-heading">Ultima novità</h2>
+                <p class="lead">{{$news->descrizione}}</p>
+                <img width="500"  src="{{asset($news->path)}}" title="{{$news->path}}" alt="{{$news->path}}">--}}
             </div>
             <div class="col-md-5 order-md-1">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" >
@@ -219,7 +233,7 @@
     </div><!-- /.container -->
 
     <div class="row featurette" style="margin: 70px 50px 0 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.539885132717!2d11.961271991606226!3d43.261394658018844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132bf95ee880ff89%3A0xb7349a3943a56b50!2sPalestra+Body+Line!5e0!3m2!1sit!2sit!4v1522417312218" width="1400" height="450" frameborder="2" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.539885132717!2d11.961271991606226!3d43.261394658018844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132bf95ee880ff89%3A0xb7349a3943a56b50!2sPalestra+Body+Line!5e0!3m2!1sit!2sit!4v1522417312218"  frameborder="2" style="border:0; width: 100%; height: 450px" allowfullscreen></iframe>
     </div>
 
     <footer class="container" id="contatti" >

@@ -1,14 +1,14 @@
 @extends('template.layout')
 @section('content')
 
-    <div class="container" style="margin-top: 50px">
+    <div class="container" style="margin-top: 80px">
         <table class="table table-responsive-sm">
             <thead class="thead-dark">
             <tr>
                 <th scope="col"></th>
-                <th scope="col">Lunedì</th>
-                <th scope="col">Martedì</th>
-                <th scope="col">Mercoledì</th>
+                <th scope="col" style="padding-left: 25px">Lunedì</th>
+                <th scope="col" style="padding-left: 25px">Martedì</th>
+                <th scope="col" >Mercoledì</th>
                 <th scope="col">Giovedì</th>
                 <th scope="col">Venerdì</th>
                 <th scope="col">Sabato</th>
@@ -24,8 +24,9 @@
                             @foreach($ris[0] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px; background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif
@@ -35,8 +36,9 @@
                             @foreach($ris[1] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px;background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif
@@ -46,8 +48,9 @@
                             @foreach($ris[2] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px;background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif
@@ -57,8 +60,9 @@
                             @foreach($ris[3] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px;background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif
@@ -68,8 +72,9 @@
                             @foreach($ris[4] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px;background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif
@@ -79,8 +84,9 @@
                             @foreach($ris[5] as $ele)
                                 @if($ele->ora==$i)
                                     <a href="{{route('corso.info', $ele->corso_id)}}">
-                                        <button type="button" class="btn btn-primary" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
+                                        <button type="button" class="btn btn-primary" style="margin-bottom:5px;background-color:{{$ele->corsoId->colore}}; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">{{$ele->corsoId->nome_corso}} </button>
                                     </a>
+                                    <br>
                                 @endif
                             @endforeach
                         @endif

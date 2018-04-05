@@ -18,8 +18,10 @@ class CreateCorsiTable extends Migration
             $table->string('nome_corso');
             $table->string('descrizione');
             $table->string('livello');
+            $table->integer('staff_id')->unsigned();
             $table->string('colore');
             $table->timestamps();
+            //$table->foreign('staff_id')->on('staffs')->references('id')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

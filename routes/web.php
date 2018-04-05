@@ -24,9 +24,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 //-----------Corsi Controller---------------------------
 Route::get('/storia', 'CorsiController@storia')->name('storia');
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('corso.info');
+Route::get('/corsoinserisci',  'CorsiController@inserisci')->name('corso.inserisci');
+Route::post('/corsoinserisci/aggiungi', 'CorsiController@salva')->name('corso.salva');
+Route::get('/agendagestisci/eliminacorso',  'CorsiController@lista')->name('corso.lista');
 
 //-----------Agenda Controller---------------------------
 Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
+Route::get('/agendagestisci',  'AgendaController@gestisci')->name('agenda.modifica');
 
 //-----------Staff Controller---------------------------
 Route::get('/staff', 'StaffController@index')->name('staff.lista');

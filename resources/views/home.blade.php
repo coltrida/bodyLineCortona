@@ -60,18 +60,19 @@
 
         @if(isset(Auth::user()->name) && Auth::user()->name=='admin')
             <div class="row" style="width:100%;margin-top: -40px;margin-bottom: 30px">
-                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Gestione Corsi</button>
-
+                <a class="nav-link" href="{{route('agenda.modifica')}}">
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione Corsi</button>
+                </a>
                 <a class="nav-link" href="{{route('listino.modifica')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px;margin-right: 10px">Gestione Listino</button>
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px;margin:0 12px">Gestione Listino</button>
                 </a>
                 <a class="nav-link" href="{{route('news.inserisci')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin-right: 10px">Gestione News</button>
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione News</button>
                 </a>
                 <a class="nav-link" href="{{route('staff.modifica')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin-right: 10px">Gestione Staff</button>
+                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione Staff</button>
                 </a>
-                <button type="button" class="btn btn-dark" style="width: 160px; margin-right: 10px">Paese dei Balocchi</button>
+                <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Paese dei Balocchi</button>
             </div>
         @endif
 
@@ -213,14 +214,16 @@
         <div class="row featurette" >
             <div class="col-md-7 order-md-2">
                 <div class="card" style="width: 32rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img class="card-img-top" src="{{asset($news->path)}}" alt="Card image cap">
-                    <div class="card-body">
-                        <h2 class="card-title">Ultima novità</h2>
-                        <p class="card-text">{{$news->descrizione}}</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Data: {{$news->created_at->format('d M Y')}}</li>
-                    </ul>
+                    @if(isset($news->descrizione))
+                        <img class="card-img-top" src="{{asset($news->path)}}" alt="">
+                        <div class="card-body">
+                            <h2 class="card-title">Ultima novità</h2>
+                            <p class="card-text">{{$news->descrizione}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Data: {{$news->created_at->format('d M Y')}}</li>
+                        </ul>
+                    @endif
                 </div>
 {{--                <h2 class="featurette-heading">Ultima novità</h2>
                 <p class="lead">{{$news->descrizione}}</p>

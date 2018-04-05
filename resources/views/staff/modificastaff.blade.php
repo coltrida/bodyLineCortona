@@ -47,6 +47,7 @@
 </div>
 
 @endsection
+
 @section('footer')
     @parent
 <script>

@@ -27,6 +27,7 @@ class NewsController extends Controller
             $file->storeAs('images', $fileName);
         }
         $news->save();
+        return redirect()->route('home');
 
     }
 

@@ -1,6 +1,6 @@
 @extends('template.layout')
 @section('content')
-    <div class="container" style="margin-top: 50px; margin-bottom: 50px">
+    <div class="container" style="margin-top: 80px; margin-bottom: 50px">
 
         <div class="card text-white bg-secondary mb-3">
             <div class="card-header"><h2>Il pensiero, il luogo, l’idea e l’obiettivo</h2></div>
@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="card text-white bg-secondary mb-3">
+        <div class="card text-white bg-secondary mb-3" style="margin-top: 40px">
             <div class="card-header"><h2>Il racconto dei nostri primi 30 anni di fitness</h2></div>
             <div class="card-body">
 

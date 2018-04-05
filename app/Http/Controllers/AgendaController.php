@@ -10,6 +10,33 @@ class AgendaController extends Controller
 {
     public function estrai()
     {
+
+        return view('agenda.visualizzaagenda',
+            [
+                'ris' => $this->estraidati()[0],
+                'orario' => $this->estraidati()[1]
+
+            ]);
+    }
+
+    public function getNomeCorso(Agenda $agenda)
+    {
+        return Corso::where('id', $agenda->id)->get();
+    }
+
+    public function gestisci()
+    {
+        $corsi = Corso::orderBy('nome_corso')->get();
+        return view('agenda.modificaagenda',
+            [
+                'ris' => $this->estraidati()[0],
+                'orario' => $this->estraidati()[1],
+                'corsi' => $corsi
+            ]);
+    }
+
+    public function estraidati()
+    {
         $lun = Agenda::where('giorno', 1)->get();
         $mar = Agenda::where('giorno', 2)->get();
         $mer = Agenda::where('giorno', 3)->get();
@@ -47,18 +74,7 @@ class AgendaController extends Controller
             "21:00"
         ];
 
-        //$nomecorso = $this->getNomeCorso($agenda[0]);
-        //dd($ris[1]);
-        return view('corsi.listacorsi',
-            [
-                'ris' => $ris,
-                'orario' => $orario
+        return [$ris, $orario];
 
-            ]);
-    }
-
-    public function getNomeCorso(Agenda $agenda)
-    {
-        return Corso::where('id', $agenda->id)->get();
     }
 }

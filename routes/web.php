@@ -24,13 +24,20 @@ Route::get('/home', 'HomeController@index')->name('home');
 //-----------Corsi Controller---------------------------
 Route::get('/storia', 'CorsiController@storia')->name('storia');
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('corso.info');
+Route::delete('/agenda/{corso}',  'CorsiController@elimina')->name('corso.delete');
 Route::get('/corsoinserisci',  'CorsiController@inserisci')->name('corso.inserisci');
 Route::post('/corsoinserisci/aggiungi', 'CorsiController@salva')->name('corso.salva');
 Route::get('/agendagestisci/eliminacorso',  'CorsiController@lista')->name('corso.lista');
+Route::get('/agendagestisci/modificacorso',  'CorsiController@modifica')->name('corso.modifica');
+Route::get('/seleziona/{id}',  'CorsiController@selezionafromid')->name('corso.seleziona');
+Route::patch('/agendagestisci/modificacorso', 'CorsiController@salvamodifica')->name('corso.patch');
 
 //-----------Agenda Controller---------------------------
 Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
 Route::get('/agendagestisci',  'AgendaController@gestisci')->name('agenda.modifica');
+Route::post('/agendagestisci/inserisci',  'AgendaController@inserisci')->name('agenda.inserisci');
+Route::delete('/agendagestisci/{agenda}',  'AgendaController@elimina')->name('agenda.elimina');
+Route::get('/agendagestisci/resetta',  'AgendaController@resetta')->name('agenda.resetta');
 
 //-----------Staff Controller---------------------------
 Route::get('/staff', 'StaffController@index')->name('staff.lista');
@@ -49,6 +56,9 @@ Route::delete('/listino/{listino}', 'ListinoController@delete')->name('listino.d
 //-----------News Controller---------------------------
 Route::get('/news', 'NewsController@inserisci')->name('news.inserisci');
 Route::post('/news', 'NewsController@salva')->name('news.salva');
+
+//-----------Baby Controller---------------------------
+Route::get('/baby', 'BabyController@index')->name('baby.visualizza');
 
 Auth::routes();
 

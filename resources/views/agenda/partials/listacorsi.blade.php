@@ -1,6 +1,6 @@
 <div class="row">
     @foreach($corsi as $corso)
-        <a class="nav-link" href="{{route('corso.info', $corso->id)}}">
+        <a class="nav-link listacorsi" id="{{route('corso.seleziona', $corso->id)}}" href="{{route('corso.info', $corso->id)}}">
             <button type="button" class="btn btn-dark"
                     style="width:138px;
                             height:70px;

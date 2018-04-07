@@ -13,12 +13,15 @@
                     <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                         <img class="card-img-top" src="{{asset("storage/".$ele->foto)}}" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title"><h3 class="d-inline-block">
+                            <h5 class="card-title">
+                                <h3 class="d-inline-block">
                                     {{$ele->nome}}
-                                    </h3><p class="d-inline-block" style="margin-left: 10px">
+                                </h3>
+                                <p class="d-inline-block" style="margin-left: 10px">
                                         <a title="Delete" href="{{route('staff.delete',$ele->id)}}" class="btn btn-danger">
                                             <span class="fa fa-trash"></span>
-                                        </a></p>
+                                        </a>
+                                </p>
                             </h5>
                             {{--<p class="card-text">"{{$ele->descrizione}}"</p>--}}
 

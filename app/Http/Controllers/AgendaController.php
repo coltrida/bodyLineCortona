@@ -77,4 +77,29 @@ class AgendaController extends Controller
         return [$ris, $orario];
 
     }
+
+    public function inserisci(Request $req)
+    {
+        foreach ($req->orario as $ele){
+            $agenda = new Agenda();
+            $agenda->corso_id = $req->corso_selezionato;
+            $oragiorno=explode("-",$ele);
+            $agenda->ora = $oragiorno[0];
+            $agenda->giorno = $oragiorno[1];
+            $agenda->save();
+        }
+        return redirect()->route('agenda.modifica');
+    }
+
+    public function elimina(Agenda $agenda)
+    {
+        $agenda->delete();
+
+    }
+
+    public function resetta()
+    {
+        Agenda::truncate();
+        return redirect()->route('agenda.modifica');
+    }
 }

@@ -14,7 +14,7 @@
 
     @for($i=1;$i<26;$i++)
         <tr>
-            <th scope="row">{{$orario[$i-1]}}</th>
+            <th scope="row" style="vertical-align: middle">{{$orario[$i-1]}}</th>
             @for($j=0;$j<6;$j++)
                 <td>
                     @if($ris[$j])
@@ -22,7 +22,7 @@
                             @if($ele->ora==$i)
                                 <a href="{{route('corso.info', $ele->corso_id)}}">
                                     <button type="button"
-                                            class="btn btn-primary"
+                                            class="btn btn-primary selezionati"
                                             style="width:138px; height:70px;
                                             margin-bottom:5px;
                                             white-space: normal;
@@ -36,7 +36,9 @@
                                 <br>
                             @endif
                         @endforeach
+
                     @endif
+
                 </td>
             @endfor
 

@@ -35,7 +35,7 @@
                 {{--<img  class="img-fluid img-thumbnail" width="250" alt="{{$ele->name}}"  src="{{asset($ele->foto)}}">--}}
                 <a href="{{route('staff.aggiungi')}}">
                     <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                        <img class="card-img-top" src="/images/trainer/anonimo.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset('images/trainer/anonimo.jpg')}}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title text-center">
                                 NEW

@@ -27,7 +27,7 @@
     <script>
         $('document').ready(function () {
 
-            $('.nav-link').on('click',function (ele) {
+            $('.listacorsi').on('click',function (ele) {
                 ele.preventDefault();
                 //alert(ele.target.parentNode.parentNode.parentNode);
                 var urlcorso = $(this).attr('href');

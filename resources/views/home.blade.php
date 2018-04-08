@@ -14,9 +14,9 @@
                 <div class="container">
 
                     <div class="carousel-caption text-left">
-                        <h1>La Srtuttura</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Scopri</a></p>
+                        <h1></h1>
+                        <p></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
                     </div>
                 </div>
             </div>
@@ -24,9 +24,9 @@
                 <img class="second-slide" src="{{asset('images/principal/seconda.jpg')}}" alt="Second slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>I Corsi</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Scopri</a></p>
+                        <h1></h1>
+                        <p></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
                     </div>
                 </div>
             </div>
@@ -34,9 +34,9 @@
                 <img class="third-slide" src="{{asset('images/principal/terza.jpg')}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
-                        <h1>La Sala Pesi</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Scopri</a></p>
+                        <h1></h1>
+                        <p></p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <p class="text-justify block-with-text">
                     Tantissime macchine per allenare ogni muscolo in maniera selettiva. Tra le più grandi presenti nel territorio. In questi spazi è sempre presente un istruttore che mostra, controlla e corregge gli esercizi agli utenti, dopo avergli gratuitamente impostato un primo percorso di fitness a seguito di un iniziale breve colloquio.
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salapesi/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button"  class="btn btn-secondary" href="{{asset('images/salapesi/01.jpg')}}"
                       data-lightbox="salapesi">
                         Foto &raquo;
                     </a>
@@ -96,12 +96,12 @@
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/03.jpg')}}"
                        data-lightbox="salapesi">
                     </a>
-                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/04.jpg')}}"
+                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/04.jpg')}}"
                        data-lightbox="salapesi">
-                    </a>
-                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/05.jpg')}}"
+                    </a>--}}
+                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/05.jpg')}}"
                        data-lightbox="salapesi">
-                    </a>
+                    </a>--}}
                 </p>
             </div><!-- /.col-lg-4 -->
 
@@ -112,7 +112,7 @@
                     Di giorno le ampie vetrate che danno sui giardini conferiscono a questa sala una luminosità che invita al movimento.
                     La sera il bianco del soffitto e delle pareti diventa l’ideale sfondo per luci soffuse che colorano l’ambiente rendendo piacevole lo svolgimento delle varie attività ginnico motorie, lezioni di gruppo o musicali proposte nell’orario corsi.
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salafitness/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salafitness/01.jpg')}}"
                       data-lightbox="salafitness">
                         Foto &raquo;
                     </a>
@@ -134,7 +134,7 @@
                         &nbsp
                     @endfor
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/01.jpg')}}"
                       data-lightbox="salaartimarziali">
                         Foto &raquo;
                     </a>
@@ -150,7 +150,7 @@
                 <p class="text-justify block-with-text">
                     La sua collocazione centrale rispetto alle altre attività fitness compatibili, è stata studiata per offrire il possibile immediato utilizzo delle tante attrezzature di questo vasto settore a chi ritenga proficuo combinare e/o integrare diverse tipologie di allenamento.
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/01.jpg')}}"
                       data-lightbox="salafunzionale">
                         Foto &raquo;
                     </a>
@@ -168,7 +168,7 @@
                         &nbsp
                     @endfor
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salaspinning/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaspinning/01.jpg')}}"
                       data-lightbox="salaspinning">
                         Foto &raquo;
                     </a>
@@ -187,7 +187,7 @@
                 <p class="text-justify block-with-text">
                     la palestra Body possiede una grande area gioco per bambini e propone un'importante iniziativa. Nei giorni di martedì e giovedì dalle ore 18:00 alle 19:30 tutti i genitori potranno portare i loro bimbi a divertirsi nell'area gioco "il Paese dei Balocchi" ed allenarsi in tutta tranquillità senza costi aggiuntivi.
                 </p>
-                <p><a class="btn btn-secondary" href="{{route('baby.visualizza')}}" role="button">Vai &raquo;</a></p>
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-secondary" href="{{route('baby.visualizza')}}" role="button">Vai &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3">
@@ -196,7 +196,7 @@
                 <p class="text-justify block-with-text">
                     Sauna finlandese quattro posti tradizionale, con braciere ed essenze. Doccia multifunzione con idromassaggio, cascata per la cervicale, cromoterapia, aromaterapia e bagno turco. Accessibile con passaggio diretto da entrambi gli spogliatoi uomini/donne.
                 </p>
-                <p><a role="button" class="btn btn-secondary" href="{{asset('images/salarelax/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salarelax/01.jpg')}}"
                       data-lightbox="salarelax">
                         Foto &raquo;
                     </a>
@@ -211,7 +211,7 @@
                         &nbsp
                     @endfor
                 </p>
-                <p id="orario"><a role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/01.jpg')}}"
+                <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/01.jpg')}}"
                       data-lightbox="salaesterna">
                         Foto &raquo;
                     </a>
@@ -281,29 +281,25 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette" >
+        <div class="row featurette">
 
-            <div class="col-md-7 order-md-2">
-                <div class="card" style="width: 32rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    @if(isset($news->descrizione))
-                        <img class="card-img-top" src="{{asset($news->path)}}" alt="">
-                        <div class="card-body">
-                            <h2 class="card-title">Ultima novità</h2>
-                            <p class="card-text">{{$news->descrizione}}</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Data: {{$news->created_at->format('d M Y')}}</li>
-                        </ul>
-                    @endif
+            <div class="container col-xl-8 col-lg-8 col-md-8 "  >
+                <div class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img class="card-img-top" src="{{asset($news->path)}}" alt="">
+                    <div class="card-body">
+                        <div class="d-inline-block"><h5 class="card-title">Ultima novità</h5></div>
+                        <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">{{$news->descrizione}}</li>
+                        <li class="list-group-item">{{$news->created_at->format('d M Y')}}</li>
+                    </ul>
                 </div>
-{{--                <h2 class="featurette-heading">Ultima novità</h2>
-                <p class="lead">{{$news->descrizione}}</p>
-                <img width="500"  src="{{asset($news->path)}}" title="{{$news->path}}" alt="{{$news->path}}">--}}
             </div>
 
-            <div class="col-md-5 order-md-1">
+            {{--<div class="col-md-5 order-md-1">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" >
-            </div>
+            </div>--}}
         </div>
     </div><!-- /.container -->
 

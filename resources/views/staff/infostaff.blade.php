@@ -5,7 +5,7 @@
             <img class="card-img-top" src="{{asset("storage/".$staff->foto)}}" alt="Card image cap">
             <div class="card-body">
                 <div class="d-inline-block"><h5 class="card-title">{{$staff->nome}}</h5></div>
-                <div class="d-inline-block" style="float: right"><button class="btn btn-primary" onclick="goBack()">Go Back</button></div>
+                <div class="d-inline-block" style="float: right"><button style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-primary" onclick="goBack()">Go Back</button></div>
                 {{--<p class="card-text"></p>--}}
             </div>
             <ul class="list-group list-group-flush">

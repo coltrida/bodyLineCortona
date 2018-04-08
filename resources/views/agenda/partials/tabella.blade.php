@@ -12,7 +12,7 @@
     </thead>
     <tbody>
 
-    @for($i=1;$i<26;$i++)
+    @for($i=1;$i<28;$i++)
         <tr>
             <th scope="row" style="vertical-align: middle">{{$orario[$i-1]}}</th>
             @for($j=0;$j<6;$j++)

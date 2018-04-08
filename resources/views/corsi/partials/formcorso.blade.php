@@ -70,8 +70,8 @@
             <?php $colore5 = '#800000' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio5" value="<?php echo $colore5 ?>">
             <label class="form-check-label" for="inlineRadio5">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore5 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore5 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -79,8 +79,8 @@
             <?php $colore6 = '#006666' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio6" value="<?php echo $colore6 ?>">
             <label class="form-check-label" for="inlineRadio6">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore6 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore6 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -88,8 +88,8 @@
             <?php $colore7 = '#4E387E' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio7" value="<?php echo $colore7 ?>">
             <label class="form-check-label" for="inlineRadio7">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore7 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore7 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -97,8 +97,8 @@
             <?php $colore8 = '#c71585' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio8" value="<?php echo $colore8 ?>">
             <label class="form-check-label" for="inlineRadio8">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore8 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore8 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -106,8 +106,8 @@
             <?php $colore9 = '#3E3535' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio9" value="<?php echo $colore9 ?>">
             <label class="form-check-label" for="inlineRadio9">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore9 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore9 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -115,8 +115,8 @@
             <?php $colore10 = '#25587E' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio10" value="<?php echo $colore10 ?>">
             <label class="form-check-label" for="inlineRadio10">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore10 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore10 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -124,8 +124,8 @@
             <?php $colore11 = '#254117' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio11" value="<?php echo $colore11 ?>">
             <label class="form-check-label" for="inlineRadio11">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore11 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore11 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>
@@ -133,8 +133,107 @@
             <?php $colore12 = '#EE9A4D' ?>
             <input class="form-check-input" type="radio" name="colore" id="inlineRadio12" value="<?php echo $colore12 ?>">
             <label class="form-check-label" for="inlineRadio12">
-                <div style="height: 20px; width: 50px; background-color:<?php echo $colore12 ?>">
-                    <p class="text-center text-white">usato</p>
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore12 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore13 = '	#E56717' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio13" value="<?php echo $colore13 ?>">
+            <label class="form-check-label" for="inlineRadio13">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore13 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore14 = '	#827839' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio14" value="<?php echo $colore14 ?>">
+            <label class="form-check-label" for="inlineRadio14">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore14 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore15 = '	#E56E94' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio15" value="<?php echo $colore15 ?>">
+            <label class="form-check-label" for="inlineRadio15">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore15 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore16 = '	#3EA99F' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio16" value="<?php echo $colore16 ?>">
+            <label class="form-check-label" for="inlineRadio16">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore16 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore17 = '	#7F525D' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio17" value="<?php echo $colore17 ?>">
+            <label class="form-check-label" for="inlineRadio17">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore17 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore18 = '	#500020' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio18" value="<?php echo $colore18 ?>">
+            <label class="form-check-label" for="inlineRadio18">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore18 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore19 = '	#40D030' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio19" value="<?php echo $colore19 ?>">
+            <label class="form-check-label" for="inlineRadio19">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore19 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore20 = '	#000000' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio20" value="<?php echo $colore20 ?>">
+            <label class="form-check-label" for="inlineRadio20">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore20 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore21 = '	#C0C0D0' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio21" value="<?php echo $colore21 ?>">
+            <label class="form-check-label" for="inlineRadio21">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore21 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore22 = '	#736AFF' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio22" value="<?php echo $colore22 ?>">
+            <label class="form-check-label" for="inlineRadio22">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore22 ?>">
+                    <p class="text-center text-white"></p>
+                </div>
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <?php $colore23 = '	#387C44' ?>
+            <input class="form-check-input" type="radio" name="colore" id="inlineRadio23" value="<?php echo $colore23 ?>">
+            <label class="form-check-label" for="inlineRadio23">
+                <div style="height: 20px; width: 20px; background-color:<?php echo $colore23 ?>">
+                    <p class="text-center text-white"></p>
                 </div>
             </label>
         </div>

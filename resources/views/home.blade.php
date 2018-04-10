@@ -154,6 +154,9 @@
                       data-lightbox="salafunzionale">
                         Foto &raquo;
                     </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/02.jpg')}}"
+                       data-lightbox="salafunzionale">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -214,6 +217,9 @@
                        data-lightbox="salaesterna">
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/03.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/04.jpg')}}"
                        data-lightbox="salaesterna">
                     </a>
                 </p>

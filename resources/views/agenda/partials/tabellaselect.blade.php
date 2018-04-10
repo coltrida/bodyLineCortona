@@ -45,7 +45,7 @@
 
                     @endif
                         <?php $z=$j+1; $indice = "$i-$z" ?>
-
+                        <label for="<?=$indice?>">
                             <div class="btn-dark" style="
                                 height: 90px;
                                 display: none;
@@ -60,7 +60,7 @@
                                            id="<?=$indice?>" >
                                 </p>
                             </div>
-
+                        </label>
 
                 </td>
             @endfor

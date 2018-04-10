@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
     <link rel="stylesheet" href="{{asset('css/lightbox.css')}}">
+    <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -61,7 +62,7 @@
             height: 1em;
             margin-top: 0.2em;
             /* bg color = bg color under block */
-            background: white;
+            background: whitesmoke;
         }
 
         .google-maps {
@@ -215,6 +216,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/#contatti">Contatti</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="border: solid white 1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" href="{{route('personal')}}">Personal Trainer</a>
+                </li>
+
 
             </ul>
 
@@ -298,6 +303,9 @@
         </script>
 
         <script src="{{asset('js/lightbox.min.js')}}"></script>
+        <script src="{{asset('js/jquery-ui.js')}}"></script>
+
+
 @show
 
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

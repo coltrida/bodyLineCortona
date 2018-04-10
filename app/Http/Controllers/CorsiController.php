@@ -14,12 +14,6 @@ class CorsiController extends Controller
         return view('corsi.eliminacorso')->with('corsi',$corsi);
     }
 
-
-    public function storia()
-    {
-        return view('storia');
-    }
-
     public function info(Corso $corso)
     {
         return view('corsi.infocorso')->with('corso',$corso);

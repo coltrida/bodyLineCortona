@@ -16,7 +16,7 @@
                     <div class="carousel-caption text-left">
                         <h1></h1>
                         <p></p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
+                        <p><a class="btn btn-lg btn-primary" id="prendi" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
                     </div>
                 </div>
             </div>
@@ -203,15 +203,10 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
-                <img class="rounded-circle" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Area Esterna</h2>
-                <p class="text-justify block-with-text">
-                    @for($i=0;$i<200;$i++)
-                        &nbsp
-                    @endfor
-                </p>
-                <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/01.jpg')}}"
+            <div class="col-lg-3 d-flex align-items-start flex-column">
+                <img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">
+                <h2 class="mb-auto">Area Esterna</h2>
+                <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary mb-auto p-2" href="{{asset('images/salaesterna/01.jpg')}}"
                       data-lightbox="salaesterna">
                         Foto &raquo;
                     </a>
@@ -281,11 +276,47 @@
 
         <hr class="featurette-divider">
 
-        <div class="row featurette">
+    <div>
+        <p id="mess"  style="border: solid green 1px; width: 200px; height: 50px; padding: 8px 0 0 25px; color: green; display: none;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            Messaggio inviato
+        </p>
+    </div>
 
-            <div class="container col-xl-8 col-lg-8 col-md-8 "  >
-                <div class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img class="card-img-top" src="{{asset($news->path)}}" alt="">
+    <div class="row featurette">
+
+            <div id="blocmail" class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
+                <div class="card"  style="width: 100%; height: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <form>
+                    <input type="hidden" name="_token" id="_token"    value="{{csrf_token()}}">
+                        <div class="card-body">
+                            <div class="d-inline-block"><h5 class="card-title">Scrivici</h5></div>
+
+                            <a title="Invia mail" id="inviamail" href="{{route('mail')}}" class="btn btn-primary" style="float: right; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                invia</a>
+                            </td>
+
+                            {{--<div class="d-inline-block" style="float: right">
+                                <button style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-primary">Invia</button>
+                            </div>--}}
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="text-danger">Nome: </span>
+                                <input required type="text" class="form-control" name="title" id="title">
+                            </li>
+                            <li class="list-group-item"><span class="text-danger">e-mail: </span>
+                                <input required type="email" class="form-control" name="mailfrom" id="mailfrom">
+                            </li>
+                            <li class="list-group-item"><span class="text-danger">Messaggio: </span>
+                                <textarea required name="content" id="content" rows="6" class="form-control"></textarea>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+            <div id="blocknews"  class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
+                <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img class="card-img-top" src="{{asset("storage/".$news->foto)}}" alt="">
                     <div class="card-body">
                         <div class="d-inline-block"><h5 class="card-title">Ultima novità</h5></div>
                         <p class="card-text"></p>
@@ -297,10 +328,8 @@
                 </div>
             </div>
 
-            {{--<div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" >
-            </div>--}}
         </div>
+
     </div><!-- /.container -->
 
     <div class="row featurette" style="margin: 70px 50px 0 50px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
@@ -311,4 +340,42 @@
         <p class="float-right" ><a href="#top">Back to top</a></p>
     </footer>
 
+@endsection
+
+
+@section('footer')
+    @parent
+    <script>
+        $('document').ready(function () {
+
+            var altezza = $('#blocknews').css('height');
+
+            $('#blocmail').css('height', 'altezza');
+
+            $('#inviamail').on('click', function (ele) {
+                ele.preventDefault();
+                var urlAlbum =   $(this).attr('href');
+
+                $.ajax(
+                    urlAlbum,
+                    {
+                        method: 'POST',
+                        data : {
+                            '_token' : $('#_token').val(),
+                            'title' : $('#title').val(),
+                            'mailfrom' : $('#mailfrom').val(),
+                            'content' : $('#content').val()
+                        },
+                        complete : function (resp) {
+                            console.log(resp.responseText);
+                            if(resp.responseText == 1){
+                                $('#mess').fadeIn(2000);
+                                $('#mess').fadeOut(3000);
+                            }
+                        }
+                    }
+                )
+            });
+        });
+    </script>
 @endsection

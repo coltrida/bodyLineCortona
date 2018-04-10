@@ -1,8 +1,8 @@
 @extends('template.layout')
 @section('content')
-    <div class="container" style="margin-top: 80px">
+    <div class="container" style="margin-top: 100px">
         <div class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <img class="card-img-top" style="width: 800px" src="{{asset("storage/".$corso->foto)}}" alt="">
+            <img class="card-img-top"  src="{{asset("storage/".$corso->foto)}}" alt="">
             <div class="card-body">
                 <div class="d-inline-block"><h5 class="card-title">{{$corso->nome_corso}}</h5></div>
                 <div class="d-inline-block" style="float: right"><button style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-primary" onclick="goBack()">Go Back</button></div>

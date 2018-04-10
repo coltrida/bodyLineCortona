@@ -7,8 +7,8 @@
     <li class="list-group-item"><span class="text-danger">
                             <div class="form-group">
                                 <label >Intensità:</label>
-                                <select required name="livello" id="livello" style="width: 160px" class="form-control">
-                                  <option selected>--seleziona--</option>
+                                <select name="livello" required id="livello" style="width: 160px" class="form-control">
+                                  <option value="">--seleziona--</option>
                                   <option id="alta" value="Alta">Alta</option>
                                   <option id="media" value="Media">Media</option>
                                   <option id="bassa" value="Bassa">Bassa</option>
@@ -32,7 +32,7 @@
         <label>Colore</label><br>
         <div class="form-check form-check-inline">
             <?php $colore1 = '#009900' ?>
-            <input class="form-check-input" type="radio" name="colore" id="inlineRadio1" value="<?php echo $colore1 ?>">
+            <input class="form-check-input" required type="radio" name="colore" id="inlineRadio1" value="<?php echo $colore1 ?>">
             <label class="form-check-label" for="inlineRadio1">
                 <div style="height: 20px; width: 20px; background-color:<?php echo $colore1 ?>">
                     <p class="text-center text-white"></p>

@@ -18,11 +18,14 @@
 });*/
 
 //-----------Home Controller---------------------------
+use App\Mail\TestEmail;
+
 Route::get('/', 'NewsController@home')->name('index');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::view('/personal', 'staff.personal')->name('personal');
+Route::view('/storia', 'storia')->name('storia');
 
 //-----------Corsi Controller---------------------------
-Route::get('/storia', 'CorsiController@storia')->name('storia');
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('corso.info');
 Route::delete('/agenda/{corso}',  'CorsiController@elimina')->name('corso.delete');
 Route::get('/corsoinserisci',  'CorsiController@inserisci')->name('corso.inserisci');
@@ -59,6 +62,13 @@ Route::post('/news', 'NewsController@salva')->name('news.salva');
 
 //-----------Baby Controller---------------------------
 Route::get('/baby', 'BabyController@index')->name('baby.visualizza');
+
+/*Route::get('/testMail', function(){
+ //   \Mail::to('coltrida@gmail.com')->send(new TestEmail());         // se il to('mail') lo mettiamo nella classe
+    \Mail::send(new TestEmail());
+})->name('inviomail');*/
+
+Route::post('/send', 'EmailController@send')->name('mail');
 
 Auth::routes();
 

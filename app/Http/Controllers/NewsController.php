@@ -17,17 +17,19 @@ class NewsController extends Controller
         News::truncate();
         $news = new News();
         $news->descrizione = $req->testo;
-        $news->foto = 'images/notizia.jpeg';
+        $news->foto = '';
+
         if($req->hasFile('foto')){
+            $news->foto = 'images/notizia2.jpeg';
             $file = $req->file('foto');
             if(!$file->isValid()){
                 return false;
             }
-            $fileName = 'notizia.'.$file->extension();
+            $fileName = 'notizia2.'.$file->extension();
             $file->storeAs('images', $fileName);
         }
         $news->save();
-        return redirect()->route('home');
+        return redirect()->route('home')->with('news',$news[0]);
 
     }
 

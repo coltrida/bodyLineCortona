@@ -160,6 +160,46 @@
         }
 
 
+        #tornasu{
+            position:relative;
+            bottom:-50px;
+            opacity:0;
+            margin-top:20px;
+        }
+
+        #btn_personal:hover{
+            background-color: #5a5a5a;
+            color: white;
+        }
+
+        .two {
+
+            animation: two 3s infinite;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+        }
+
+        .element {
+            display: inline-block;
+
+            font-family: Verdana, sans-serif;
+            border: 1px solid rgba(0,0,0,.3);
+        }
+
+        .element h2{
+            font-size: 28px;
+        }
+
+        @keyframes two {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+
         /* RESPONSIVE CSS
         -------------------------------------------------- */
 
@@ -187,7 +227,7 @@
 
 <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#" style="border:0;padding:0">
+        <a class="navbar-brand" href="{{route('index')}}" style="border:0;padding:0">
             <img src="{{asset('images/blogo.png')}}" alt="logo" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -217,7 +257,7 @@
                     <a class="nav-link" href="/#contatti">Contatti</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="border: solid white 1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" href="{{route('personal')}}">Personal Trainer</a>
+                    <a id="btn_personal" class="nav-link" style="border: solid white 1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" href="{{route('personal')}}">Personal Trainer</a>
                 </li>
 
 

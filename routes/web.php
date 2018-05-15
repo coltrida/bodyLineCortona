@@ -60,13 +60,12 @@ Route::delete('/listino/{listino}', 'ListinoController@delete')->name('listino.d
 Route::get('/news', 'NewsController@inserisci')->name('news.inserisci');
 Route::post('/news', 'NewsController@salva')->name('news.salva');
 
+//-----------Listino Controller---------------------------
+Route::get('/foto', 'FotoController@index')->name('foto.modifica');
+Route::post('/foto/{indice}', 'FotoController@salva')->name('foto.salva');
+
 //-----------Baby Controller---------------------------
 Route::get('/baby', 'BabyController@index')->name('baby.visualizza');
-
-/*Route::get('/testMail', function(){
- //   \Mail::to('coltrida@gmail.com')->send(new TestEmail());         // se il to('mail') lo mettiamo nella classe
-    \Mail::send(new TestEmail());
-})->name('inviomail');*/
 
 Route::post('/send', 'EmailController@send')->name('mail');
 

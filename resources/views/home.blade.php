@@ -6,37 +6,70 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
         <div class="carousel-inner" style="height: 600px">
             <div class="carousel-item active" style="height: 600px">
 
-                <img class="first-slide" src="{{asset('images/principal/prima.jpg')}}" style="height: 600px" alt="First slide">
+                <img class="first-slide" src="{{asset("storage/principal/1.jpeg$versione")}}" style="height: 600px" alt="First slide">
                 <div class="container">
 
                     <div class="carousel-caption text-left">
                         <h1></h1>
                         <p></p>
-                        <p><a class="btn btn-lg btn-primary" id="prendi" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
+                        {{--<p><a class="btn btn-lg btn-primary" id="prendi" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
                     </div>
                 </div>
             </div>
             <div class="carousel-item" style="height: 600px">
-                <img class="second-slide" src="{{asset('images/principal/seconda.jpg')}}" alt="Second slide" style="height: 600px">
+                <img class="second-slide" src="{{asset("storage/principal/2.jpeg$versione")}}" alt="Second slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1></h1>
                         <p></p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
+                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
                     </div>
                 </div>
             </div>
             <div class="carousel-item" style="height: 600px">
-                <img class="third-slide" src="{{asset('images/principal/terza.jpg')}}" alt="Third slide" style="height: 600px">
+                <img class="third-slide" src="{{asset("storage/principal/3.jpeg$versione")}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
                         <h1></h1>
                         <p></p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>
+                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 600px">
+                <img class="third-slide" src="{{asset("storage/principal/4.jpeg$versione")}}" alt="Third slide" style="height: 600px">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1></h1>
+                        <p></p>
+                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 600px">
+                <img class="third-slide" src="{{asset("storage/principal/5.jpeg$versione")}}" alt="Third slide" style="height: 600px">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1></h1>
+                        <p></p>
+                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="height: 600px">
+                <img class="third-slide" src="{{asset("storage/principal/6.jpeg$versione")}}" alt="Third slide" style="height: 600px">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1></h1>
+                        <p></p>
+                        {{--<p><a class="btn btn-lg btn-primary" href="#" role="button" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Scopri</a></p>--}}
                     </div>
                 </div>
             </div>
@@ -61,26 +94,29 @@
         @if(isset(Auth::user()->name) && Auth::user()->name=='admin')
             <div class="row" style="width:100%;margin-top: -40px;margin-bottom: 30px">
                 <a class="nav-link" href="{{route('agenda.modifica')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione Corsi</button>
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br> Corsi</button>
                 </a>
                 <a class="nav-link" href="{{route('listino.modifica')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px;margin:0 12px">Gestione Listino</button>
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px;margin:0 6px">Gestione <br> Listino</button>
                 </a>
                 <a class="nav-link" href="{{route('news.inserisci')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione News</button>
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br> News</button>
                 </a>
                 <a class="nav-link" href="{{route('staff.modifica')}}">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Gestione Staff</button>
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br>Staff</button>
+                </a>
+                <a class="nav-link" href="{{route('foto.modifica')}}">
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br>Foto</button>
                 </a>
                 <a class="nav-link" href="">
-                    <button type="button" class="btn btn-dark" style="width: 160px;height:60px; margin:0 12px">Paese dei Balocchi</button>
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Paese dei <br>Balocchi</button>
                 </a>
             </div>
         @endif
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="primacarta" >
                 <img class="rounded-circle" src="{{asset('images/schede/salapesi.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Sala Pesi</h2>
                 <p class="text-justify block-with-text">
@@ -105,7 +141,7 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="secondacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Sala Fitness</h2>
                 <p class="text-justify block-with-text">
@@ -125,7 +161,7 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="terzacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/artimarziali.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Sala Arti Marziali</h2>
                 <p class="text-justify block-with-text">
@@ -144,11 +180,12 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="quartacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/funzionale.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Sala Funzionale</h2>
                 <p class="text-justify block-with-text">
                     La sua collocazione centrale rispetto alle altre attività fitness compatibili, è stata studiata per offrire il possibile immediato utilizzo delle tante attrezzature di questo vasto settore a chi ritenga proficuo combinare e/o integrare diverse tipologie di allenamento.
+
                 </p>
                 <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/01.jpg')}}"
                       data-lightbox="salafunzionale">
@@ -162,7 +199,7 @@
         </div><!-- /.row -->
 
         <div class="row" style="margin-top: 40px">
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="quintacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/spinning.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Sala Spinning</h2>
                 <p class="text-justify block-with-text">
@@ -184,7 +221,7 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="sestacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/baby.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Baby Parking</h2>
                 <p class="text-justify block-with-text">
@@ -193,7 +230,7 @@
                 <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-secondary" href="{{route('baby.visualizza')}}" role="button">Vai &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 element" id="settimacarta">
                 <img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2>Area Relax</h2>
                 <p class="text-justify block-with-text">
@@ -206,7 +243,7 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 d-flex align-items-start flex-column">
+            <div class="col-lg-3 d-flex align-items-start flex-column element" id="ottavacarta">
                 <img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">
                 <h2 class="mb-auto">Area Esterna</h2>
                 <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary mb-auto p-2" href="{{asset('images/salaesterna/01.jpg')}}"
@@ -284,10 +321,22 @@
 
     <div>
         <p id="mess"  style="border: solid green 1px; width: 200px; height: 50px; padding: 8px 0 0 25px; color: green; display: none;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            Messaggio inviato
+
         </p>
+
     </div>
 
+{{--    @if(count($errors))
+
+        <div class="alert alert-danger">
+
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif--}}
     <div class="row featurette">
 
             <div id="blocmail" class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
@@ -322,7 +371,7 @@
 
             <div id="blocknews"  class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
                 <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img class="card-img-top" src="{{asset("storage/".$news->foto)}}" alt="">
+                    <img class="card-img-top" src="{{asset("storage/".$news->foto.$versione)}}" alt="">
                     <div class="card-body">
                         <div class="d-inline-block"><h5 class="card-title">Ultima novità</h5></div>
                         <p class="card-text"></p>
@@ -343,7 +392,7 @@
     </div>
 
     <footer class="container" id="contatti" >
-        <p class="float-right" ><a href="#top">Back to top</a></p>
+        <p class="float-right" ><a id="tornasu" class="btn btn-success" href="#myCarousel">Back to top</a></p>
     </footer>
 
 @endsection
@@ -366,6 +415,7 @@
                     urlAlbum,
                     {
                         method: 'POST',
+                        dataType: 'json',
                         data : {
                             '_token' : $('#_token').val(),
                             'title' : $('#title').val(),
@@ -376,6 +426,21 @@
                             console.log(resp.responseText);
                             if(resp.responseText == 1){
                                 $('#mess').fadeIn(2000);
+                                $('#mess').html("Messaggio inviato");
+                                $('#mess').fadeOut(3000);
+                                $('#content').val("").attr("required", false);
+                                $('#mailfrom').val("").attr("required", false);
+                                $('#title').val("").attr("required", false);
+                            } else {
+                                var cc = JSON.parse(resp.responseText);
+                                if(cc.errors.content){
+                                    $('#mess').html(cc.errors.content + " <br> messaggio non inviato");
+                                }
+                                if(cc.errors.mailfrom){
+                                    $('#mess').html(cc.errors.mailfrom + " <br> messaggio non inviato");
+                                }
+                                $('#mess').css("height", 80);
+                                $('#mess').fadeIn(2000);
                                 $('#mess').fadeOut(3000);
                             }
                         }
@@ -384,4 +449,86 @@
             });
         });
     </script>
+
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function() {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
+    </script>
+
+    <script >
+        $(window).scroll(function(){
+            var windowWidth = $(this).width();
+            var windowHeight = $(this).height();
+            var windowScrollTop = $(this).scrollTop();
+
+            // effect 
+            var thirdAnimation = function(){
+                $('#tornasu').delay(1000).animate({opacity:1, bottom:0},'slow');
+            };
+
+            if(windowWidth<=549){
+                if(windowScrollTop>3500){
+                    thirdAnimation();
+
+                }
+            }else if(windowWidth>549 && windowWidth<=991){
+                if(windowScrollTop>2200){
+                    thirdAnimation();
+
+                }
+            }else{
+                if(windowScrollTop>1600){
+                    thirdAnimation();
+                }
+                if(windowScrollTop > ($("#primacarta").offset().top-250) && (windowScrollTop < ($("#primacarta").offset().top))) {
+                    $("#primacarta").toggleClass('two');
+                    $("#secondacarta").toggleClass('two');
+                    $("#terzacarta").toggleClass('two');
+                    $("#quartacarta").toggleClass('two');
+
+                    $("#quintacarta").toggleClass('two');
+                    $("#sestacarta").toggleClass('two');
+                    $("#settimacarta").toggleClass('two');
+                    $("#ottavacarta").toggleClass('two');
+                }
+            }
+        });
+        //# sourceURL=pen.js
+
+    </script>
+
 @endsection

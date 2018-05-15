@@ -8,11 +8,26 @@ use Mail;
 
 class EmailController extends Controller
 {
+
+    protected $rules = [
+        'content' => 'required',
+        'mailfrom' => 'required|email'
+    ];
+
+    protected $errorMessages = [
+        'content.required' => 'Il campo Messaggio è obbligatorio',
+        'mailfrom.required' => 'Il campo mail è obbligatorio',
+        'mailfrom.email' => 'Il campo mail non è corretto'
+    ];
+
     public function send(Request $req)
     {
+        $this->validate($req, $this->rules, $this->errorMessages);
+
         $title = $req->input('title');
         $content = $req->input('content');
         $mailfrom = $req->input('mailfrom');
+
 
         Mail::send('mails.testemail',
             [
@@ -21,8 +36,10 @@ class EmailController extends Controller
                 'content' => $content
             ], function ($message)
         {
-            $message->from('coltrida@gmail.com', 'pippo');
+            $subject = "Messaggio inviato dal sito";
+            $message->from('coltrida@gmail.com', "Bodyline");
             $message->to('coltrida@gmail.com');
+            $message->subject($subject);
         });
 
         //return response()->json(['message' => 'Request completed']);

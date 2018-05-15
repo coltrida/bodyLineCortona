@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Listino;
+use Gate;
 use Illuminate\Http\Request;
 
 class ListinoController extends Controller
@@ -15,6 +16,10 @@ class ListinoController extends Controller
 
     public function modificalistino()
     {
+        if(Gate::denies('manage-admin')){
+            dd('Non autorizzato');
+        }
+
         $listino = Listino::orderBy('id')->get();
         return view('listino.modificalistino')->with('listino',$listino);
     }

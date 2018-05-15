@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\News;
+use Gate;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
     public function inserisci()
     {
+        if(Gate::denies('manage-admin')){
+            dd('Non autorizzato');
+        }
+
         return view('news.inseriscinews');
     }
 
@@ -16,7 +21,11 @@ class NewsController extends Controller
     {
         News::truncate();
         $news = new News();
-        $news->descrizione = $req->testo;
+        if ($req->testo != ''){
+            $news->descrizione = $req->testo;
+        }else {
+            $news->descrizione = '';
+        }
         $news->foto = '';
 
         if($req->hasFile('foto')){
@@ -37,7 +46,10 @@ class NewsController extends Controller
     {
         $news = News::get();
         //dd($news[0]);
-        return view('home')->with('news',$news[0]);
+        $x = rand(1,20);
+        $y = rand(1,20);
+        $versione = "?ver=$x.$y";
+        return view('home')->with('news',$news[0])->with('versione',$versione);
     }
 
 }

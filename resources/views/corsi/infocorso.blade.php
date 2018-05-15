@@ -9,8 +9,25 @@
                 {{--<p class="card-text"></p>--}}
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{$corso->descrizione}}</li>
-                <li class="list-group-item"><span class="text-danger">Intensità: </span>{{$corso->livello}}</li>
+                <li class="list-group-item text-justify">{{$corso->descrizione}}</li>
+                <li class="list-group-item">
+
+                    @switch($corso->livello)
+                    @case("Alta")
+                    <img src="{{asset('images/alta.jpg')}}" alt="">
+                    @break
+
+                    @case("Media")
+                    <img src="{{asset('images/media.jpg')}}" alt="">
+                    @break
+
+                    @case("Bassa")
+                    <img src="{{asset('images/bassa.jpg')}}" alt="">
+                    @break
+
+                    @endswitch
+
+                </li>
                 @if($corso->staff_id != 0)
                     <li class="list-group-item"><span class="text-danger">Trainer: </span>
                         <a href="{{route('staff.info', $corso->staff_id)}}">{{$corso->staffId->nome}}</a>

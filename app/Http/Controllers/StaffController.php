@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Staff;
+use Gate;
 use Illuminate\Http\Request;
 use function view;
 
@@ -23,6 +24,10 @@ class StaffController extends Controller
 
     public function gestisci()
     {
+        if(Gate::denies('manage-admin')){
+            dd('Non autorizzato');
+        }
+
         $staff = Staff::orderBy('nome')->get();
         return view('staff.modificastaff')->with('staff',$staff);
 

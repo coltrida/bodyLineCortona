@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use function abort;
 use App\Models\Agenda;
 use App\Models\Corso;
+use Gate;
 use Illuminate\Http\Request;
 
 class AgendaController extends Controller
@@ -26,6 +28,10 @@ class AgendaController extends Controller
 
     public function gestisci()
     {
+        if(Gate::denies('manage-admin')){
+            dd('Non autorizzato');
+        }
+
         $corsi = Corso::orderBy('nome_corso')->get();
         return view('agenda.modificaagenda',
             [

@@ -9,7 +9,7 @@
                 {{--<p class="card-text"></p>--}}
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{$staff->descrizione}}</li>
+                <li class="list-group-item text-justify">{{$staff->descrizione}}</li>
             </ul>
         </div>
     </div>

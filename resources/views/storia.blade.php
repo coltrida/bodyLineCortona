@@ -1,6 +1,6 @@
 @extends('template.layout')
 @section('content')
-    <div class="container" style="margin-top: 80px; margin-bottom: 50px">
+    <div id="cont" class="container" style="margin-top: 80px; margin-bottom: 50px">
 
         <div class="card text-white bg-secondary mb-3">
             <div class="card-header"><h2>Il pensiero, il luogo, l’idea e l’obiettivo</h2></div>
@@ -32,5 +32,15 @@
 
     </div>
 
-
 @endsection
+
+@section('footer')
+    @parent
+    <script>
+        var windowWidth = $(window).width();
+        if (windowWidth < 600)
+        {
+            $('#cont').css('margin-top',160);
+        }
+    </script>
+@stop

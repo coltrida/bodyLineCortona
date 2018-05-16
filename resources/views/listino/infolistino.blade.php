@@ -1,6 +1,6 @@
 @extends('template.layout')
 @section('content')
-    <div class="container" style="margin-top: 80px">
+    <div id="cont" class="container" style="margin-top: 80px">
 
         <div class="card bg-dark text-white" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
@@ -84,8 +84,18 @@
     </div>
 @endsection
 
-<script>
-    function goBack() {
-        window.history.back();
-    }
-</script>
+@section('footer')
+    @parent
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        var windowWidth = $(window).width();
+
+        if (windowWidth < 600)
+        {
+            $('#cont').css('margin-top',150);
+        }
+    </script>
+@stop

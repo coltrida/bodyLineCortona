@@ -36,9 +36,7 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item text-justify">
-                    Tantissimi sono i corsi e le iniziative per coinvolgere i più piccoli, TAEKWONDO, ATLETICA E MINIATLETICA, AIUTO COMPITI, FESTE A TEMA.
-
-                    Rivolgetevi alla reception del centro fitness per avere informazioni dettagliate su orari, insegnanti, eventi e costi.
+                    Facepainting, giochi gonfiabili, sculture di palloncini, zucchero filato e molte altre attività possono essere richieste per rendere la vostra festa unica ed indimenticabile!
                 </li>
                 <li class="list-group-item text-justify">
                     Lo spazio bimbi della palestra Body può essere affittato per feste private e compleanni.
@@ -58,11 +56,11 @@
                 {{--<p class="card-text"></p>--}}
             </div>
             <ul class="list-group list-group-flush">
+
                 <li class="list-group-item text-justify">
-                    Facepainting, giochi gonfiabili, sculture di palloncini, zucchero filato e molte altre attività possono essere richieste per rendere la vostra festa unica ed indimenticabile!
-                </li>
-                <li class="list-group-item text-justify">
-                    <b>PER I GENITORI ISCRITTI ALLA PALESTRA BODY IL SERVIZIO DI BABY PARKING E' GRATUITO</b>
+                    Tantissimi sono i corsi e le iniziative per coinvolgere i più piccoli, TAEKWONDO, ATLETICA E MINIATLETICA, AIUTO COMPITI, FESTE A TEMA.
+
+                    Rivolgetevi alla reception del centro fitness per avere informazioni dettagliate su orari, insegnanti, eventi e costi.
                 </li>
             </ul>
         </div>

@@ -339,7 +339,7 @@
     @endif--}}
     <div class="row featurette">
 
-            <div id="blocmail" class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
+            <div id="blocmail" class="container col-xl-4 col-lg-4 col-md-6" style="margin: 10px 0" >
                 <div class="card"  style="width: 100%; height: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <form>
                     <input type="hidden" name="_token" id="_token"    value="{{csrf_token()}}">
@@ -362,14 +362,14 @@
                                 <input required type="email" class="form-control" name="mailfrom" id="mailfrom">
                             </li>
                             <li class="list-group-item"><span class="text-danger">Messaggio: </span>
-                                <textarea required name="content" id="content" rows="6" class="form-control"></textarea>
+                                <textarea required name="content" id="content" rows="12" class="form-control"></textarea>
                             </li>
                         </ul>
                     </form>
                 </div>
             </div>
 
-            <div id="blocknews"  class="container col-xl-6 col-lg-6 col-md-6 " style="margin: 10px 0" >
+            <div id="blocknews"  class="container col-xl-8 col-lg-8 col-md-6 " style="margin: 10px 0" >
                 <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <img class="card-img-top" src="{{asset("storage/".$news->foto.$versione)}}" alt="">
                     <div class="card-body">

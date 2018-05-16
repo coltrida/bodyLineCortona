@@ -370,20 +370,109 @@
             </div>
 
             <div id="blocknews"  class="container col-xl-8 col-lg-8 col-md-6 " style="margin: 10px 0" >
-                <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                    <img class="card-img-top" src="{{asset("storage/".$news->foto.$versione)}}" alt="">
+                {{--<div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <img class="card-img-top" src="{{asset("storage/".$news[0]->foto.$versione)}}" alt="">
                     <div class="card-body">
                         <div class="d-inline-block"><h5 class="card-title">Ultima novità</h5></div>
                         <p class="card-text"></p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">{{$news->descrizione}}</li>
-                        <li class="list-group-item">{{$news->created_at->format('d M Y')}}</li>
+                        <li class="list-group-item">{{$news[0]->descrizione}}</li>
+                        <li class="list-group-item">{{$news[0]->created_at->format('d M Y')}}</li>
                     </ul>
+                </div>--}}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                            <img class="card-img-top" src="{{asset("storage/".$news[0]->foto.$versione)}}" alt="">
+                            <div class="card-body">
+                                <div class="d-inline-block"><h5 class="card-title">Ultima novità</h5></div>
+                                <p class="card-text"></p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">{{$news[0]->descrizione}}</li>
+                                <li class="list-group-item">{{$news[0]->created_at->format('d M Y')}}</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
                 </div>
+
+
             </div>
 
         </div>
+
+    <div class="row featurette">
+        <div class="card-deck">
+            @if(isset($news[1]->foto))
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <img class="card-img-top" src="{{asset("storage/".$news[1]->foto.$versione)}}" >
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">{{$news[1]->descrizione}}</p>
+                    <p class="card-text"><small class="text-muted">{{$news[1]->created_at->format('d M Y')}}</small></p>
+                </div>
+            </div>
+            @endif
+            @if(isset($news[2]->foto))
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <img class="card-img-top" src="{{asset("storage/".$news[2]->foto.$versione)}}" >
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">{{$news[2]->descrizione}}</p>
+                    <p class="card-text"><small class="text-muted">{{$news[2]->created_at->format('d M Y')}}</small></p>
+                </div>
+            </div>
+            @endif
+            @if(isset($news[3]->foto))
+            <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <img class="card-img-top" src="{{asset("storage/".$news[3]->foto.$versione)}}" >
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">{{$news[3]->descrizione}}</p>
+                    <p class="card-text"><small class="text-muted">{{$news[3]->created_at->format('d M Y')}}</small></p>
+                </div>
+            </div>
+                @endif
+        </div>
+
+            {{--<div class="row">
+                <div class="col-md-5">
+                    <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <img class="card-img-top" src="{{asset("storage/".$news[1]->foto.$versione)}}" alt="">
+                        <div class="card-body">
+                            <div class="d-inline-block"><h5 class="card-title"></h5></div>
+                            <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{$news[1]->descrizione}}</li>
+                            <li class="list-group-item">{{$news[1]->created_at->format('d M Y')}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-5 ">
+                    <div  class="card" style="width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <img class="card-img-top" src="{{asset("storage/".$news[2]->foto.$versione)}}" alt="">
+                        <div class="card-body">
+                            <div class="d-inline-block"><h5 class="card-title"></h5></div>
+                            <p class="card-text"></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">{{$news[2]->descrizione}}</li>
+                            <li class="list-group-item">{{$news[2]->created_at->format('d M Y')}}</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>--}}
+
+
+
+
+    </div>
 
     </div><!-- /.container -->
 

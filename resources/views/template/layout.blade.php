@@ -269,7 +269,11 @@
                 <a class="nav-link" target="_blank" href="https://www.facebook.com/groups/palestrabodycamucia">
                     <img src="{{asset('images/fb.png')}}" alt="Facebook" height="30">
                 </a>
-
+            </li>
+            <li>
+                <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/body-line-palestra-cortona/">
+                    <img src="{{asset('images/ln.png')}}" alt="LinkedIn" height="30">
+                </a>
             </li>
             <!-- Authentication Links -->
             @guest

@@ -3,7 +3,7 @@
 
 <div class="container" style="margin-top: 40px">
 
-    <div class="row">
+    <div class="row" id="cont">
         @foreach($staff as $ele)
             <div class="col-md-4 col-sm-4 col-lg-4" style="margin: 75px">
                 {{--<img  class="img-fluid img-thumbnail" width="250" alt="{{$ele->name}}"  src="{{asset($ele->foto)}}">--}}
@@ -24,3 +24,14 @@
 </div>
 
 @endsection
+
+@section('footer')
+    @parent
+    <script>
+        var windowWidth = $(window).width();
+        if (windowWidth < 600)
+        {
+            $('#cont').css('margin-top',110);
+        }
+    </script>
+@stop

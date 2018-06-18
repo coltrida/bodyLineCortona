@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use function abort;
+use App;
 use App\Models\Agenda;
 use App\Models\Corso;
 use Gate;
@@ -109,5 +110,13 @@ class AgendaController extends Controller
     {
         Agenda::truncate();
         return redirect()->route('agenda.modifica');
+    }
+
+    public function stampa(){
+
+        $pdf = App::make('dompdf.wrapper');
+        $pdf->loadView('storia2');
+        return $pdf->download('storia.pdf');
+
     }
 }

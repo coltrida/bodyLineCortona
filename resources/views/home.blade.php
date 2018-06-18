@@ -1,7 +1,7 @@
 @extends('template.layout')
 @section('content')
 
-    <div id="myCarousel" class="carousel slide" style="height: 600px" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" style="height: 400px" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -10,8 +10,8 @@
             <li data-target="#myCarousel" data-slide-to="4"></li>
             <li data-target="#myCarousel" data-slide-to="5"></li>
         </ol>
-        <div class="carousel-inner" style="height: 600px">
-            <div class="carousel-item active" style="height: 600px">
+        <div class="carousel-inner" style="height: 400px">
+            <div class="carousel-item active" style="height: 400px">
 
                 <img class="first-slide" src="{{asset("storage/principal/1.jpeg$versione")}}" style="height: 600px" alt="First slide">
                 <div class="container">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 600px">
+            <div class="carousel-item" style="height: 400px">
                 <img class="second-slide" src="{{asset("storage/principal/2.jpeg$versione")}}" alt="Second slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 600px">
+            <div class="carousel-item" style="height: 400px">
                 <img class="third-slide" src="{{asset("storage/principal/3.jpeg$versione")}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 600px">
+            <div class="carousel-item" style="height: 400px">
                 <img class="third-slide" src="{{asset("storage/principal/4.jpeg$versione")}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 600px">
+            <div class="carousel-item" style="height: 400px">
                 <img class="third-slide" src="{{asset("storage/principal/5.jpeg$versione")}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-item" style="height: 600px">
+            <div class="carousel-item" style="height: 400px">
                 <img class="third-slide" src="{{asset("storage/principal/6.jpeg$versione")}}" alt="Third slide" style="height: 600px">
                 <div class="container">
                     <div class="carousel-caption text-right">
@@ -116,9 +116,22 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-3 element" id="primacarta" >
-                <img class="rounded-circle" src="{{asset('images/schede/salapesi.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Sala Pesi</h2>
+            <div class="col-lg-3 element " id="primacarta" >
+                {{--<img class="rounded-circle" src="{{asset('images/schede/salapesi.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/salapesi.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Sala Pesi</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Sala Pesi--}}</h2>
                 <p class="text-justify block-with-text">
                     Tantissime macchine per allenare ogni muscolo in maniera selettiva. Tra le più grandi presenti nel territorio. In questi spazi è sempre presente un istruttore che mostra, controlla e corregge gli esercizi agli utenti, dopo avergli gratuitamente impostato un primo percorso di fitness a seguito di un iniziale breve colloquio.
                 </p>
@@ -141,9 +154,22 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
+
+
             <div class="col-lg-3 element" id="secondacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Sala Fitness</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Sala Fitness</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{--<h2>Sala Fitness</h2>--}}
                 <p class="text-justify block-with-text">
                     Di giorno le ampie vetrate che danno sui giardini conferiscono a questa sala una luminosità che invita al movimento.
                     La sera il bianco del soffitto e delle pareti diventa l’ideale sfondo per luci soffuse che colorano l’ambiente rendendo piacevole lo svolgimento delle varie attività ginnico motorie, lezioni di gruppo o musicali proposte nell’orario corsi.
@@ -162,27 +188,57 @@
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3 element" id="terzacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/artimarziali.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Sala Arti Marziali</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/artimarziali.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/artimarziali.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Sala Arti Marziali</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Sala Arti Marziali--}}</h2>
                 <p class="text-justify block-with-text">
                     Un’area dedicata dove poter provare in sicurezza tecniche di taekwondo (bambini), Kick boxing e Krav maga, che coniugano una buona ginnastica preparatoria all’utilità della loro pratica.
                     @for($i=0;$i<50;$i++)
                         &nbsp
                     @endfor
                 </p>
-                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/01.jpg')}}"
+                <p>
+                    <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/01.jpg')}}"
                       data-lightbox="salaartimarziali">
                         Foto &raquo;
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/02.jpg')}}"
                        data-lightbox="salaartimarziali">
                     </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/03.jpg')}}"
+                       data-lightbox="salaartimarziali">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3 element" id="quartacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/funzionale.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Sala Funzionale</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/funzionale.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/funzionale.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Sala Funzionale</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Sala Funzionale--}}</h2>
                 <p class="text-justify block-with-text">
                     La sua collocazione centrale rispetto alle altre attività fitness compatibili, è stata studiata per offrire il possibile immediato utilizzo delle tante attrezzature di questo vasto settore a chi ritenga proficuo combinare e/o integrare diverse tipologie di allenamento.
 
@@ -200,8 +256,21 @@
 
         <div class="row" style="margin-top: 40px">
             <div class="col-lg-3 element" id="quintacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/spinning.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Sala Spinning</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/spinning.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/spinning.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Sala Spinning</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Sala Spinning--}}</h2>
                 <p class="text-justify block-with-text">
                     Dotata di schermatura insonorizzata, con specchi e giochi di luce all’interno. Le bike sono di marca technogym.
                     @for($i=0;$i<100;$i++)
@@ -222,8 +291,21 @@
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3 element" id="sestacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/baby.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Baby Parking</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/baby.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/baby.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Baby Parking</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Baby Parking--}}</h2>
                 <p class="text-justify block-with-text">
                     la palestra Body possiede una grande area gioco per bambini e propone un'importante iniziativa. Nei giorni di martedì e giovedì dalle ore 18:00 alle 19:30 tutti i genitori potranno portare i loro bimbi a divertirsi nell'area gioco "il Paese dei Balocchi" ed allenarsi in tutta tranquillità senza costi aggiuntivi.
                 </p>
@@ -231,21 +313,54 @@
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3 element" id="settimacarta">
-                <img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2>Area Relax</h2>
+                {{--<img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/relax.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Area Relax</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Area Relax--}}</h2>
                 <p class="text-justify block-with-text">
                     Sauna finlandese quattro posti tradizionale, con braciere ed essenze. Doccia multifunzione con idromassaggio, cascata per la cervicale, cromoterapia, aromaterapia e bagno turco. Accessibile con passaggio diretto da entrambi gli spogliatoi uomini/donne.
                 </p>
-                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salarelax/01.jpg')}}"
+                <p>
+                    <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salarelax/01.jpg')}}"
                       data-lightbox="salarelax">
                         Foto &raquo;
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salarelax/02.jpg')}}"
+                       data-lightbox="salarelax">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salarelax/03.jpg')}}"
+                       data-lightbox="salarelax">
                     </a>
                 </p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-3 d-flex align-items-start flex-column element" id="ottavacarta">
-                <img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">
-                <h2 class="mb-auto">Area Esterna</h2>
+                {{--<img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/esterni.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Area Esterna</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2 class="mb-auto">{{--Area Esterna--}}</h2>
                 <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary mb-auto p-2" href="{{asset('images/salaesterna/01.jpg')}}"
                       data-lightbox="salaesterna">
                         Foto &raquo;
@@ -257,6 +372,12 @@
                        data-lightbox="salaesterna">
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/04.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/05.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/06.jpg')}}"
                        data-lightbox="salaesterna">
                     </a>
                 </p>
@@ -405,12 +526,12 @@
         </div>
 
     <div class="row featurette">
-        <div class="card-deck">
+        <div class="card-deck justify-content-center">
             @if(isset($news[1]->foto))
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <img class="card-img-top" src="{{asset("storage/".$news[1]->foto.$versione)}}" >
+                <img class="card-img-top " src="{{asset("storage/".$news[1]->foto.$versione)}}" >
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    {{--<h5 class="card-title">Card title</h5>--}}
                     <p class="card-text">{{$news[1]->descrizione}}</p>
                     <p class="card-text"><small class="text-muted">{{$news[1]->created_at->format('d M Y')}}</small></p>
                 </div>
@@ -420,7 +541,7 @@
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <img class="card-img-top" src="{{asset("storage/".$news[2]->foto.$versione)}}" >
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    {{--<h5 class="card-title">Card title</h5>--}}
                     <p class="card-text">{{$news[2]->descrizione}}</p>
                     <p class="card-text"><small class="text-muted">{{$news[2]->created_at->format('d M Y')}}</small></p>
                 </div>
@@ -430,7 +551,7 @@
             <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <img class="card-img-top" src="{{asset("storage/".$news[3]->foto.$versione)}}" >
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    {{--<h5 class="card-title">Card title</h5>--}}
                     <p class="card-text">{{$news[3]->descrizione}}</p>
                     <p class="card-text"><small class="text-muted">{{$news[3]->created_at->format('d M Y')}}</small></p>
                 </div>
@@ -603,7 +724,7 @@
                 if(windowScrollTop>1600){
                     thirdAnimation();
                 }
-                if(windowScrollTop > ($("#primacarta").offset().top-250) && (windowScrollTop < ($("#primacarta").offset().top))) {
+                /*if(windowScrollTop > ($("#primacarta").offset().top-250) && (windowScrollTop < ($("#primacarta").offset().top))) {
                     $("#primacarta").toggleClass('two');
                     $("#secondacarta").toggleClass('two');
                     $("#terzacarta").toggleClass('two');
@@ -613,7 +734,7 @@
                     $("#sestacarta").toggleClass('two');
                     $("#settimacarta").toggleClass('two');
                     $("#ottavacarta").toggleClass('two');
-                }
+                }*/
             }
         });
         //# sourceURL=pen.js

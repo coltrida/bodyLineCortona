@@ -2,10 +2,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119522082-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119522082-2');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Palestra BODY LINE Cortona">
+    <meta name="keywords" content="Palestra, Bodyline, Cortona, Body, Line, Fitness, Bodybuilding, Trainer">
     <link rel="icon" href="../../images/favicon.ico">
 
     <title>Bodyline Cortona</title>
@@ -17,6 +28,7 @@
 
     <link rel="stylesheet" href="{{asset('css/lightbox.css')}}">
     <link rel="stylesheet" href="{{asset('css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('css/over.css')}}">
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
@@ -42,7 +54,7 @@
         /* create the ... */
         .block-with-text:before {
             /* points in the end */
-            content: '...';
+            content: '';
             /* absolute position */
             position: absolute;
             /* set position to right bottom corner of block */
@@ -308,7 +320,10 @@
 
 </main>
 
+
+
 @section('footer')
+
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

@@ -37,6 +37,7 @@ Route::patch('/agendagestisci/modificacorso', 'CorsiController@salvamodifica')->
 
 //-----------Agenda Controller---------------------------
 Route::get('/agenda',  'AgendaController@estrai')->name('agenda');
+Route::get('/pdf',  'AgendaController@stampa')->name('pdf');
 Route::get('/agendagestisci',  'AgendaController@gestisci')->name('agenda.modifica');
 Route::post('/agendagestisci/inserisci',  'AgendaController@inserisci')->name('agenda.inserisci');
 Route::delete('/agendagestisci/{agenda}',  'AgendaController@elimina')->name('agenda.elimina');

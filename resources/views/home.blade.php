@@ -116,10 +116,10 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-            <div class="col-lg-3 element " id="primacarta" >
+            <div class="col-lg-4 element " id="primacarta" >
                 {{--<img class="rounded-circle" src="{{asset('images/schede/salapesi.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/salapesi.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -156,9 +156,9 @@
 
 
 
-            <div class="col-lg-3 element" id="secondacarta">
+            <div class="col-lg-4 element" id="secondacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/fitnessmusicale.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -187,10 +187,10 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 element" id="terzacarta">
+            <div class="col-lg-4 element" id="terzacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/artimarziali.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/artimarziali.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -223,10 +223,14 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 element" id="quartacarta">
+
+        </div><!-- /.row -->
+
+        <div class="row" style="margin-top: 40px">
+            <div class="col-lg-4 element" id="quartacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/funzionale.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/funzionale.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -252,13 +256,10 @@
                     </a>
                 </p>
             </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-        <div class="row" style="margin-top: 40px">
-            <div class="col-lg-3 element" id="quintacarta">
+            <div class="col-lg-4 element" id="quintacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/spinning.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/spinning.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -290,10 +291,10 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 element" id="sestacarta">
+            <div class="col-lg-4 element" id="sestacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/baby.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/baby.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -312,10 +313,15 @@
                 <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-secondary" href="{{route('baby.visualizza')}}" role="button">Vai &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 element" id="settimacarta">
+
+
+        </div ><!-- /.row -->
+
+        <div class="row">
+            <div class="col-lg-4 element" id="settimacarta">
                 {{--<img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/relax.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -333,7 +339,7 @@
                 </p>
                 <p>
                     <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salarelax/01.jpg')}}"
-                      data-lightbox="salarelax">
+                       data-lightbox="salarelax">
                         Foto &raquo;
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salarelax/02.jpg')}}"
@@ -345,10 +351,51 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-            <div class="col-lg-3 d-flex align-items-start flex-column element" id="ottavacarta">
-                {{--<img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+            <div class="col-lg-4 element" id="ottavacarta">
+                {{--<img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
 
-                <div class="item-hover circle effect18 bottom_to_top">
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/piscina.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Area Piscina</h3>
+                                <p>{{--Description goes here--}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>{{--Area Relax--}}</h2>
+                <p class="text-justify block-with-text">
+                    @for($i=0;$i<170;$i++)
+                        &nbsp
+                    @endfor
+                </p>
+                <p>
+                    <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/02.jpg')}}"
+                       data-lightbox="salapiscina">
+                        Foto &raquo;
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/03.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/04.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/05.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/06.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                </p>
+            </div><!-- /.col-lg-4 -->
+
+            <div class="col-lg-4 element" id="nonacarta">
+                {{--<img class="rounded-circle" src="{{asset('images/schede/relax.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}
+
+                <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
                         <div class="img"><img src="{{asset('images/schede/esterni.jpg')}}" alt="img"></div>
                         <div class="info">
@@ -360,9 +407,15 @@
                     </a>
                 </div>
 
-                <h2 class="mb-auto">{{--Area Esterna--}}</h2>
-                <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary mb-auto p-2" href="{{asset('images/salaesterna/01.jpg')}}"
-                      data-lightbox="salaesterna">
+                <h2>{{--Area Relax--}}</h2>
+                <p class="text-justify block-with-text">
+                    @for($i=0;$i<170;$i++)
+                        &nbsp
+                    @endfor
+                </p>
+                <p>
+                    <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/01.jpg')}}"
+                       data-lightbox="salaesterna">
                         Foto &raquo;
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/02.jpg')}}"
@@ -383,7 +436,44 @@
                 </p>
             </div><!-- /.col-lg-4 -->
 
-        </div ><!-- /.row -->
+            {{--<div class="col-lg-4 d-flex align-items-start flex-column element" id="nonacarta">
+                --}}{{--<img class="rounded-circle p-2" src="{{asset('images/schede/esterni.jpg')}}" alt="Generic placeholder image" width="140" height="140">--}}{{--
+
+                <div class="item-hover circle effect18 bottom_to_top">
+                    <a href="#">
+                        <div class="img"><img src="{{asset('images/schede/esterni.jpg')}}" alt="img"></div>
+                        <div class="info">
+                            <div class="info-back">
+                                <h3>Area Esterna</h3>
+                                <p>--}}{{--Description goes here--}}{{--</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <h2 class="mb-auto">--}}{{--Area Esterna--}}{{--</h2>
+                <p id="orario"><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary mb-auto p-2" href="{{asset('images/salaesterna/01.jpg')}}"
+                                  data-lightbox="salaesterna">
+                        Foto &raquo;
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/02.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/03.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/04.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/05.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/06.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                </p>
+            </div><!-- /.col-lg-4 -->--}}
+        </div>
 
         <!-- START THE FEATURETTES -->
 

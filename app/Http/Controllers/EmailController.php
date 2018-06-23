@@ -11,11 +11,13 @@ class EmailController extends Controller
 
     protected $rules = [
         'content' => 'required',
+        'consenso' => 'required',
         'mailfrom' => 'required|email'
     ];
 
     protected $errorMessages = [
         'content.required' => 'Il campo Messaggio è obbligatorio',
+        'consenso.required' => 'Il consenso deve essere selezionato',
         'mailfrom.required' => 'Il campo mail è obbligatorio',
         'mailfrom.email' => 'Il campo mail non è corretto'
     ];
@@ -25,6 +27,7 @@ class EmailController extends Controller
         $this->validate($req, $this->rules, $this->errorMessages);
 
         $title = $req->input('title');
+
         $content = $req->input('content');
         $mailfrom = $req->input('mailfrom');
 

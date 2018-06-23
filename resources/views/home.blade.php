@@ -1,6 +1,8 @@
 @extends('template.layout')
 @section('content')
 
+        @include('cookieConsent::index')
+
     <div id="myCarousel" class="carousel slide" style="height: 400px" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -556,9 +558,6 @@
                     <input type="hidden" name="_token" id="_token"    value="{{csrf_token()}}">
                         <div class="card-body">
                             <div class="d-inline-block"><h5 class="card-title">Scrivici</h5></div>
-
-                            <a title="Invia mail" id="inviamail" href="{{route('mail')}}" class="btn btn-primary" style="float: right; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                invia</a>
                             </td>
 
                             {{--<div class="d-inline-block" style="float: right">
@@ -574,6 +573,14 @@
                             </li>
                             <li class="list-group-item"><span class="text-danger">Messaggio: </span>
                                 <textarea required name="content" id="content" rows="12" class="form-control"></textarea>
+                            </li>
+                            <li class="list-group-item">
+                                <span style="float: left; font-size: .8rem">
+                                    <input style="margin-right: 5px" type="checkbox" id="consenso" name="consenso" required>Ho letto l'Informativa sulla Privacy e acconsento al trattamento dei dati personali
+                                </span>
+                                <a title="Invia mail" id="inviamail" href="{{route('mail')}}" class="btn btn-primary not-active" style="  float: right; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                                    invia
+                                </a>
                             </li>
                         </ul>
                     </form>
@@ -614,6 +621,8 @@
             </div>
 
         </div>
+
+
 
     <div class="row featurette">
         <div class="card-deck justify-content-center">
@@ -691,9 +700,11 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6910.539885132717!2d11.961271991606226!3d43.261394658018844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132bf95ee880ff89%3A0xb7349a3943a56b50!2sPalestra+Body+Line!5e0!3m2!1sit!2sit!4v1522417312218"  frameborder="2" style="border:0; width: 100%; height: 450px" allowfullscreen></iframe>
     </div>
 
-    <footer class="container" id="contatti" >
-        <p class="float-right" ><a id="tornasu" class="btn btn-success" href="#myCarousel">Back to top</a></p>
-    </footer>
+
+
+    <div class="container" id="contatti" >
+        <p class="float-right" ><a style="margin-bottom: -40px" id="tornasu" class="btn btn-success" href="#myCarousel">Back to top</a></p>
+    </div>
 
 @endsection
 
@@ -720,6 +731,7 @@
                             '_token' : $('#_token').val(),
                             'title' : $('#title').val(),
                             'mailfrom' : $('#mailfrom').val(),
+                            'consenso' : $('#consenso').val(),
                             'content' : $('#content').val()
                         },
                         complete : function (resp) {
@@ -748,6 +760,18 @@
                 )
             });
         });
+    </script>
+
+    <script>
+
+        $("#consenso").change(function() {
+            if(this.checked) {
+                $("#inviamail").removeClass('not-active');
+            }else{
+                $("#inviamail").addClass('not-active');
+            }
+        });
+
     </script>
 
     <script>

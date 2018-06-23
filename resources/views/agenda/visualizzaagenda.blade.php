@@ -4,7 +4,7 @@
     <div id="cont" class="container" style="margin-top: 80px">
         @include('agenda.partials.tabella')
     </div>
-    <a class="btn btn-success" href="{{route('pdf')}}">pdf</a>
+{{--    <a class="btn btn-success" href="{{route('pdf')}}">pdf</a>--}}
 @endsection
 
 @section('footer')

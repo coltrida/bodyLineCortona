@@ -24,6 +24,7 @@ Route::get('/', 'NewsController@home')->name('index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::view('/personal', 'staff.personal')->name('personal');
 Route::view('/storia', 'storia')->name('storia');
+Route::view('/cookie', 'cookie')->name('cookie');
 
 //-----------Corsi Controller---------------------------
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('corso.info');

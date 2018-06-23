@@ -202,6 +202,30 @@
             font-size: 28px;
         }
 
+        .infocookie {
+            height: 150px;
+            position: fixed;
+            bottom:0;
+            width:100%;
+            background-color: #393838;
+            opacity: 0.7;
+            z-index: 999999;
+            padding: 10px 10px 0 15px;
+            color: white;
+            text-align: center;
+            padding: auto;
+            font-size: 1rem;
+        }
+
+        .not-active {
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: black;
+            background-color: darkred;
+            opacity: .5;
+        }
+
         @keyframes two {
             0% {
                 transform: rotateY(0);
@@ -320,8 +344,6 @@
 
 </main>
 
-
-
 @section('footer')
 
         <!-- Bootstrap core JavaScript
@@ -364,7 +386,11 @@
         <script src="{{asset('js/lightbox.min.js')}}"></script>
         <script src="{{asset('js/jquery-ui.js')}}"></script>
 
-
+            <div class="card-footer text-muted bg-dark" style="margin-top: 70px; height: 90px; margin-bottom: -50px">
+                <a style="color: white;" href="{{route('cookie')}}">
+                    Privacy & Cookie Policy
+                </a>
+        </div>
 @show
 
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

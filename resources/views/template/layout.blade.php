@@ -287,10 +287,13 @@
                     <a class="nav-link" href="{{route('listino.info')}}">Listino</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#orario">Orario</a>
+                    <a class="nav-link" href="/#orario2">Orario</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/#contatti">Contatti</a>
+                    <a class="nav-link" href="/#contatti">Dove Siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{route('jobs')}}">Posizioni Aperte</a>
                 </li>
                 <li class="nav-item">
                     <a id="btn_personal" class="nav-link" style="border: solid white 1px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" href="{{route('personal')}}">Personal Trainer</a>
@@ -302,12 +305,17 @@
         </div>
         <ul class="navbar-nav ml-auto">
             <li>
-                <a class="nav-link" target="_blank" href="https://www.facebook.com/groups/palestrabodycamucia">
+                <a class="nav-link" target="_blank" title="Instagram" href="https://www.instagram.com/palestrabodyline?=nametag">
+                    <img src="{{asset('images/in.png')}}" alt="Instagram" height="30">
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" target="_blank" title="Facebook" href="https://www.facebook.com/groups/palestrabodycamucia">
                     <img src="{{asset('images/fb.png')}}" alt="Facebook" height="30">
                 </a>
             </li>
             <li>
-                <a class="nav-link" target="_blank" href="https://www.linkedin.com/company/body-line-palestra-cortona/">
+                <a class="nav-link" target="_blank" title="LinkedIn" href="https://www.linkedin.com/company/body-line-palestra-cortona/">
                     <img src="{{asset('images/ln.png')}}" alt="LinkedIn" height="30">
                 </a>
             </li>
@@ -341,7 +349,23 @@
 <main role="main">
 
     @yield('content')
-
+    <div class="card-footer text-muted bg-dark" style="margin-top: 70px; height: 190px; margin-bottom: -50px">
+        <div class="row" style="display: flex; justify-content: space-around; align-items: center">
+            <div>
+                BODY LINE s.n.c. <br>
+                di Castellani e Moretti <br>
+                Nuova variante ex SS 71 <br>
+                Loc. CAMUCIA - CORTONA (AR) <br>
+                partita IVA: 01639380516 <br>
+                mail: nuvolefumo@gmail.com
+            </div>
+            <div>
+                <a style="color: white;" href="{{route('cookie')}}">
+                    Informativa Privacy & Cookie Policy
+                </a>
+            </div>
+        </div>
+    </div>
 </main>
 
 @section('footer')
@@ -386,11 +410,7 @@
         <script src="{{asset('js/lightbox.min.js')}}"></script>
         <script src="{{asset('js/jquery-ui.js')}}"></script>
 
-            <div class="card-footer text-muted bg-dark" style="margin-top: 70px; height: 90px; margin-bottom: -50px">
-                <a style="color: white;" href="{{route('cookie')}}">
-                    Privacy & Cookie Policy
-                </a>
-        </div>
+
 @show
 
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

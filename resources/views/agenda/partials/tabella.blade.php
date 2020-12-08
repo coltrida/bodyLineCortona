@@ -13,24 +13,48 @@
     <tbody>
 
     @for($i=1;$i<28;$i++)
+        @php
+            $riga_visualizza = 0;
+        @endphp
+
+        @for($j=0;$j<6;$j++)
+
+                @if($ris[$j])
+                    @foreach($ris[$j] as $ele)
+                        @if($ele->ora==$i)
+                            @php
+                                $riga_visualizza = 1;
+                            @endphp
+                        @endif
+                    @endforeach
+
+                @endif
+
+
+        @endfor
+
+
+        @if($riga_visualizza == 1)
         <tr>
-            <th scope="row" style="vertical-align: middle">{{$orario[$i-1]}}</th>
+            <th scope="row" style="vertical-align: middle"><span style="font-size: 20px;">{{$orario[$i-1]}}</span></th>
             @for($j=0;$j<6;$j++)
-                <td>
+                <td style="padding: 3px 0 0 10px; border-right: solid lightgray 1px">
                     @if($ris[$j])
                         @foreach($ris[$j] as $ele)
                             @if($ele->ora==$i)
                                 <a href="{{route('corso.info', $ele->corso_id)}}">
                                     <button type="button"
                                             class="btn btn-primary selezionati"
-                                            style="width:138px; height:70px;
+                                            style="width:138px; height:40px;
                                             margin-bottom:5px;
-                                            white-space: normal;
+                                                    line-height: 11px;
+                                                    white-space: normal;
                                             padding-right: 2px;
                                             padding-left: 0;
+                                                    padding-bottom: 12px;
                                             background-color:{{$ele->corsoId->colore}};
                                             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                                        {{$ele->corsoId->nome_corso}}
+                                        <span style=" font-size: 10px; line-height: 11px; text-transform: uppercase;">{{$ele->corsoId->nome_corso}}</span>
                                     </button>
                                 </a>
                                 <br>
@@ -43,6 +67,7 @@
             @endfor
 
         </tr>
+        @endif
     @endfor
 
     </tbody>

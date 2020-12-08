@@ -26,6 +26,7 @@ Route::view('/personal', 'staff.personal')->name('personal');
 Route::view('/storia', 'storia')->name('storia');
 Route::view('/cookie', 'cookie')->name('cookie');
 
+
 //-----------Corsi Controller---------------------------
 Route::get('/agenda/{corso}',  'CorsiController@info')->name('corso.info');
 Route::delete('/agenda/{corso}',  'CorsiController@elimina')->name('corso.delete');
@@ -61,6 +62,17 @@ Route::delete('/listino/{listino}', 'ListinoController@delete')->name('listino.d
 //-----------News Controller---------------------------
 Route::get('/news', 'NewsController@inserisci')->name('news.inserisci');
 Route::post('/news', 'NewsController@salva')->name('news.salva');
+
+//-----------Jobs Controller---------------------------
+Route::get('/gestiscijobs', 'JobsController@gestisci')->name('jobs.gestisci');
+Route::get('/listajobs', 'JobsController@lista')->name('jobs.lista');
+Route::get('/eliminajobs', 'JobsController@elimina')->name('jobs.elimina');
+Route::post('/inseriscijobs', 'JobsController@inserisci')->name('jobs.inserisci');
+Route::get('/eliminapre{job}', 'JobsController@elimina')->name('jobs.elimina');
+Route::get('/visualizza{job}', 'JobsController@visualizza')->name('jobs.visualizza');
+Route::get('/candidati{job}', 'JobsController@candidati')->name('jobs.candidati');
+Route::post('/candidati/invia', 'EmailController@inviacv')->name('jobs.inviacandidatura');
+Route::get('/jobs', 'JobsController@index')->name('jobs');
 
 //-----------Listino Controller---------------------------
 Route::get('/foto', 'FotoController@index')->name('foto.modifica');

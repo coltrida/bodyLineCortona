@@ -110,8 +110,8 @@
                 <a class="nav-link" href="{{route('foto.modifica')}}">
                     <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br>Foto</button>
                 </a>
-                <a class="nav-link" href="">
-                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Paese dei <br>Balocchi</button>
+                <a class="nav-link" href="{{route('jobs.gestisci')}}">
+                    <button type="button" class="btn btn-dark" style="width: 140px;height:60px; margin:0 6px">Gestione <br>Lavori</button>
                 </a>
             </div>
         @endif
@@ -147,12 +147,21 @@
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/03.jpg')}}"
                        data-lightbox="salapesi">
                     </a>
-                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/04.jpg')}}"
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/04.jpg')}}"
                        data-lightbox="salapesi">
-                    </a>--}}
-                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/05.jpg')}}"
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/05.jpg')}}"
                        data-lightbox="salapesi">
-                    </a>--}}
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/06.jpg')}}"
+                       data-lightbox="salapesi">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/07.jpg')}}"
+                       data-lightbox="salapesi">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapesi/08.jpg')}}"
+                       data-lightbox="salapesi">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
 
@@ -184,6 +193,21 @@
                        data-lightbox="salafitness">
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/03.jpg')}}"
+                       data-lightbox="salafitness">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/04.jpg')}}"
+                       data-lightbox="salafitness">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/05.jpg')}}"
+                       data-lightbox="salafitness">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/06.jpg')}}"
+                       data-lightbox="salafitness">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/07.jpg')}}"
+                       data-lightbox="salafitness">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafitness/08.jpg')}}"
                        data-lightbox="salafitness">
                     </a>
                 </p>
@@ -222,6 +246,9 @@
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/03.jpg')}}"
                        data-lightbox="salaartimarziali">
                     </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaartimarziali/04.jpg')}}"
+                       data-lightbox="salaartimarziali">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
 
@@ -256,6 +283,9 @@
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/02.jpg')}}"
                        data-lightbox="salafunzionale">
                     </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salafunzionale/03.jpg')}}"
+                       data-lightbox="salafunzionale">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 element" id="quintacarta">
@@ -263,10 +293,10 @@
 
                 <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
-                        <div class="img"><img src="{{asset('images/schede/spinning.jpg')}}" alt="img"></div>
+                        <div class="img"><img src="{{asset('images/schede/posturale.jpg')}}" alt="img"></div>
                         <div class="info">
                             <div class="info-back">
-                                <h3>Sala Spinning</h3>
+                                <h3>Sala Benessere Posturale</h3>
                                 <p>{{--Description goes here--}}</p>
                             </div>
                         </div>
@@ -275,19 +305,25 @@
 
                 <h2>{{--Sala Spinning--}}</h2>
                 <p class="text-justify block-with-text">
-                    Dotata di schermatura insonorizzata, con specchi e giochi di luce all’interno. Le bike sono di marca technogym.
-                    @for($i=0;$i<100;$i++)
+
+                    @for($i=0;$i<170;$i++)
                         &nbsp
                     @endfor
                 </p>
-                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaspinning/01.jpg')}}"
+                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button" class="btn btn-secondary" href="{{asset('images/salaposturale/01.jpg')}}"
                       data-lightbox="salaspinning">
                         Foto &raquo;
                     </a>
-                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaspinning/02.jpg')}}"
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaposturale/02.jpg')}}"
                        data-lightbox="salaspinning">
                     </a>
-                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaspinning/03.jpg')}}"
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaposturale/03.jpg')}}"
+                       data-lightbox="salaspinning">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaposturale/04.jpg')}}"
+                       data-lightbox="salaspinning">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaposturale/05.jpg')}}"
                        data-lightbox="salaspinning">
                     </a>
                 </p>
@@ -298,10 +334,10 @@
 
                 <div class="item-hover circle effect18 bottom_to_top" style="margin: 0 auto">
                     <a href="#">
-                        <div class="img"><img src="{{asset('images/schede/baby.jpg')}}" alt="img"></div>
+                        <div class="img"><img src="{{asset('images/schede/family.jpg')}}" alt="img"></div>
                         <div class="info">
                             <div class="info-back">
-                                <h3>Baby Parking</h3>
+                                <h3>Family Fit</h3>
                                 <p>{{--Description goes here--}}</p>
                             </div>
                         </div>
@@ -310,9 +346,21 @@
 
                 <h2>{{--Baby Parking--}}</h2>
                 <p class="text-justify block-with-text">
-                    la palestra Body possiede una grande area gioco per bambini e propone un'importante iniziativa. Nei giorni di martedì e giovedì dalle ore 18:00 alle 19:30 tutti i genitori potranno portare i loro bimbi a divertirsi nell'area gioco "il Paese dei Balocchi" ed allenarsi in tutta tranquillità senza costi aggiuntivi.
+                    Grazie alla collaborazione tra la palestra Body Line e il parco giochi Hyde Park trovare tempo per l'attività fisica non sarà più un problema! Lasciate che i vostri bimbi si divertano sotto lo sguardo attento di Ciro e Cira ed allenatevi alla Body!
                 </p>
-                <p><a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" class="btn btn-secondary" href="{{route('baby.visualizza')}}" role="button">Vai &raquo;</a></p>
+                <p>
+                    <a style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" role="button"
+                       class="btn btn-secondary" href="{{asset('images/family/01.jpg')}}"
+                       data-lightbox="family">
+                        Foto &raquo;
+                    </a>
+                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/family/02.jpg')}}"
+                       data-lightbox="family">
+                    </a>--}}
+                    {{--<a hidden role="button" class="btn btn-secondary" href="{{asset('images/family/03.jpg')}}"
+                       data-lightbox="family">
+                    </a>--}}
+                </p>
             </div><!-- /.col-lg-4 -->
 
 
@@ -391,6 +439,18 @@
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/06.jpg')}}"
                        data-lightbox="salapiscina">
                     </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/07.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/08.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/09.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salapiscina/10.jpg')}}"
+                       data-lightbox="salapiscina">
+                    </a>
                 </p>
             </div><!-- /.col-lg-4 -->
 
@@ -433,6 +493,15 @@
                        data-lightbox="salaesterna">
                     </a>
                     <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/06.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/07.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/08.jpg')}}"
+                       data-lightbox="salaesterna">
+                    </a>
+                    <a hidden role="button" class="btn btn-secondary" href="{{asset('images/salaesterna/09.jpg')}}"
                        data-lightbox="salaesterna">
                     </a>
                 </p>
@@ -479,45 +548,45 @@
 
         <!-- START THE FEATURETTES -->
 
-        <hr  class="featurette-divider">
+        <hr id="orario2" class="featurette-divider">
 
         <div >
-            <div  class="col-md-7" style="margin-top: -70px">
-                <h2  class="featurette-heading">Orario Apertura</h2>
+            <div  class="col-md-8" style="margin-top: -70px">
+                <h2   class="featurette-heading">Orario Apertura</h2>
                 <p class="lead">
 
                     <div class="card-deck ">
 
-                        <div class="card bg-dark text-white" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="card bg-dark text-white" style="padding: 1rem; width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
                                 <li class="list-group-item bg-dark text-white">
-                                    <p style="color: red; margin: 0 0 -5px -5px">Dal lunedì al giovedì</p>
-                                    Dalle 09:00 Alle 22:30
-                                </li>
-                                <li class="list-group-item bg-dark text-white">
-                                    <p style="color: red; margin: 0 0 -5px -5px">Venerdì</p>
+                                    <p style="color: red; margin: 0 0 -5px -5px">Dal lunedì al venerdì</p>
                                     Dalle 09:00 Alle 22:00
                                 </li>
+                                {{--<li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Venerdì</p>
+                                    Dalle 09:00 Alle 22:00
+                                </li>--}}
                                 <li class="list-group-item bg-dark text-white">
                                     <p style="color: red; margin: 0 0 -5px -5px">Sabato</p>
-                                    Dalle 09:00 Alle 13:00<br>Dalle 16:00 Alle 20:00
+                                    Dalle 09:00 Alle 13:30<br>Dalle 16:00 Alle 20:00
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="card bg-dark text-white" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="card bg-dark text-white" style="padding: 1rem; width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
                                 <li class="list-group-item bg-dark text-white">
-                                    <p style="color: red; margin: 0 0 -5px -5px">From Monday to Thursday</p>
-                                    Open 09:00 am - Close 10:30 pm
-                                </li>
-                                <li class="list-group-item bg-dark text-white">
-                                    <p style="color: red; margin: 0 0 -5px -5px">Friday</p>
+                                    <p style="color: red; margin: 0 0 -5px -5px">From Monday to Friday</p>
                                     Open 09:00 am - Close 10:00 pm
                                 </li>
+                                {{--<li class="list-group-item bg-dark text-white">
+                                    <p style="color: red; margin: 0 0 -5px -5px">Friday</p>
+                                    Open 09:00 am - Close 10:00 pm
+                                </li>--}}
                                 <li class="list-group-item bg-dark text-white">
                                     <p style="color: red; margin: 0 0 -5px -5px">Saturday</p>
-                                    Open 09:00 am - Close 01:00 pm <br>Open 04:00 pm - Close 08:00 pm
+                                    Open 09:00 am - Close 01:30 pm <br>Open 04:00 pm - Close 08:00 pm
                                 </li>
                             </ul>
 

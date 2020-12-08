@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Corso;
 use App\Models\Staff;
 use Gate;
 use Illuminate\Http\Request;
@@ -40,6 +41,13 @@ class StaffController extends Controller
 
     public function elimina(Staff $staff)
     {
+        $id = $staff->id;
+        $corsi = Corso::where('staff_id', $id)->get();
+        foreach ($corsi as $corso){
+            $corso->staff_id = 0;
+            $corso->save();
+        }
+
         $staff->delete();
     }
 
